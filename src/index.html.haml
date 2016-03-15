@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 %html
-	%head
-		<meta charset="utf-8">
-		<title>Forme</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  %head
+    <meta charset="utf-8">
+    <title>Forme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-	%body
-		.container
-			%h1
-				FormMe
-			.fm-form
-				.fm-form-control
-					%input.full-width.fm-input{:type => "text", :required => "required"}/
-					%span.fm-placeholder
-						Placeholder
-				.fm-form-control
-					%input.full-width.fm-input{:type => "text"}/
-					%span.fm-placeholder
-						Placeholder
-				.fm-form-control
-					%input.fm-checkbox{:type => "checkbox", :id => "checbox_id"}/
-					%label.fm-placeholder-checkbox{"for"=>"checbox_id"}
-						Label
+  %body
+    .container
+      %h1
+        FormMe
+      .fm-form
+        .fm-form-control
+          %input.full-width.fm-input{:type => "text", :required => "required"}/
+          %span.fm-placeholder
+            Placeholder
+        .fm-form-control
+          %input.full-width.fm-input{:type => "text"}/
+          %span.fm-placeholder
+            Placeholder
+        .fm-form-control
+          %input.fm-checkbox{:type => "checkbox", :id => "checbox_id"}/
+          %label.fm-placeholder-checkbox{"for"=>"checbox_id"}
+            Checkbox
+        .fm-form-control
+          .fm-radio-wrap
+            %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio1", :type => "radio", :value => "radio1"}/
+            %label.fm-placeholder-radio{"for"=>"fm_radio1"}
+              Radio 1
+          .fm-radio-wrap
+            %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio2", :type => "radio", :value => "radio2"}/
+            %label.fm-placeholder-radio{"for"=>"fm_radio2"}
+              Radio 2
+          .fm-radio-wrap
+            %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio3", :type => "radio", :value => "radio3"}/
+            %label.fm-placeholder-radio{"for"=>"fm_radio3"}
+              Radio 3
