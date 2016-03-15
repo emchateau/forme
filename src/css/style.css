@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+body {
+  background-color: #e6e6e6;
+  font-family: 'PT Sans', sans-serif;
+  color: #2c3e50;
+}
+
+.fm-form-control {
+  position: relative;
+  margin-bottom: 23px;
+}
+.fm-form-control .fm-input {
+  display: inline-block;
+  border: 2px solid #95a5a6;
+  border-radius: 6px;
+  padding: 10px 15px;
+  box-shadow: none;
+}
+.fm-form-control .fm-input:invalid {
+  border-color: #c0392b;
+}
+.fm-form-control .fm-input:focus {
+  border-color: #2980b9;
+}
+.fm-form-control .fm-input:focus + .fm-placeholder {
+  top: 100%;
+  margin-top: 0;
+  font-size: 80%;
+}
+.fm-form-control .fm-placeholder {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  left: 0;
+  top: 50%;
+  line-height: 18px;
+  margin: -9px 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.fm-checkbox {
+  display: none;
+}
+.fm-checkbox:checked + .fm-placeholder-checkbox:before {
+  opacity: 1;
+  visibility: visible;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.fm-placeholder-checkbox {
+  padding-left: 20px;
+}
+.fm-placeholder-checkbox:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: 2px;
+  background-color: #2980b9;
+  visibility: hidden;
+  z-index: 2;
+  opacity: 0;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-radius: 10px;
+}
+.fm-placeholder-checkbox:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.container {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+  display: block;
+}

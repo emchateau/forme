@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+%html
+	%head
+		<meta charset="utf-8">
+		<title>Forme</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/style.css">
+
+	%body
+		.container
+			%h1
+				FormMe
+			.fm-form
+				.fm-form-control
+					%input.full-width.fm-input{:type => "text", :required => "required"}/
+					%span.fm-placeholder
+						Placeholder
+				.fm-form-control
+					%input.full-width.fm-input{:type => "text"}/
+					%span.fm-placeholder
+						Placeholder
+				.fm-form-control
+					%input.fm-checkbox{:type => "checkbox", :id => "checbox_id"}/
+					%label.fm-placeholder-checkbox{"for"=>"checbox_id"}
+						Label
