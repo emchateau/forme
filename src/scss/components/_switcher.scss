@@ -1,0 +1,52 @@
+// Switcher
+// Only circle and we need only height !!!
+$switcher_h: 14px;
+$switcher_conteiner_h: 16px; //cant be smaller
+
+.fm-switcher {
+    display: none;
+
+    &:checked {
+        & + .fm-placeholder-switcher {
+            &:before {
+                left: #{$switcher_h + ($switcher_conteiner_h - $switcher_h)/2};
+            }
+        }
+    }
+}
+
+.fm-placeholder-switcher {
+    padding-left: #{$switcher_conteiner_h*2 + 5px};
+    cursor: pointer;
+    line-height: $switcher_conteiner_h;
+
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 50%;
+        width: $switcher_h;
+        height: $switcher_h;
+        margin-top: #{-$switcher_h / 2};
+        margin-left: #{($switcher_conteiner_h - $switcher_h) / 2};
+        background-color: $fm_active_color;
+        z-index: 2;
+
+        @include transition(all 0.2s ease-in-out);
+
+        border-radius: 10px;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 50%;
+        width: $switcher_conteiner_h * 2;
+        height: $switcher_conteiner_h;
+        margin-top: #{-$switcher_conteiner_h / 2};
+        background-color: #fff;
+        z-index: 1;
+        border-radius: 10px;
+    }
+}

@@ -2,7 +2,12 @@
 // Config
 $fm_input_padding_vertical: 10px;
 $fm_input_padding_horizontal: 15px;
+
+$fm_select_padding_vertical: $fm_input_padding_vertical - 2px;
+$fm_select_padding_horizontal: 15px;
+
 $fm_placeholder_height: 18px;
 $fm_active_color: #2980b9;
 $fm_border_color: #95a5a6;
 $fm_input_bg: #ffffff;
+$fm_input_height: 40px;

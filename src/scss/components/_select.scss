@@ -46,11 +46,11 @@
 .fm-select {
     border-radius: 6px;
     display: inline-block;
-    padding: $fm_input_padding_vertical #{$fm_input_padding_horizontal*2} $fm_input_padding_vertical $fm_input_padding_horizontal;
+    padding: $fm_select_padding_vertical #{$fm_select_padding_horizontal*2} $fm_select_padding_vertical $fm_select_padding_horizontal;
     box-shadow: none;
     border: 0;
     outline: none;
-
+    
     @include box-sizing(border-box);
 
     border: 2px solid $fm_border_color;
