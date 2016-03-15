@@ -17,6 +17,7 @@ body {
         padding: $fm_input_padding_vertical $fm_input_padding_horizontal;
         box-shadow: none;
         @include box-sizing(border-box);
+        background-color: $fm_input_bg;
         &:invalid {
             border-color: #c0392b;
         }

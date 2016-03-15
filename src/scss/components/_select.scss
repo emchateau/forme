@@ -1,0 +1,63 @@
+// Select
+.fm-select-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    overflow: hidden;
+    display: inline-block;
+
+    &:before {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 10%;
+        pointer-events: none;
+        content: '';
+        bottom: 0;
+        z-index: 2;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 4px 0 4px;
+        border-color: $fm_active_color transparent transparent transparent;
+        margin: -2px #{$fm_input_padding_horizontal};
+    }
+
+    &:after {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        // maybe in width and max-width
+        max-width: 25px;
+        width: 20%;
+        pointer-events: none;
+        content: '';
+        bottom: 0;
+        z-index: 1;
+        background-color: $fm_input_bg;
+        border-radius: 6px;
+
+        // Need fixs
+        margin: 2px;
+    }
+}
+
+.fm-select {
+    border-radius: 6px;
+    display: inline-block;
+    padding: $fm_input_padding_vertical #{$fm_input_padding_horizontal*2} $fm_input_padding_vertical $fm_input_padding_horizontal;
+    box-shadow: none;
+    border: 0;
+    outline: none;
+
+    @include box-sizing(border-box);
+
+    border: 2px solid $fm_border_color;
+
+    // Hide arrow
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
