@@ -2,7 +2,7 @@
 %html
   %head
     <meta charset="utf-8">
-    <title>Forme</title>
+    <title>ForMe - css form framework</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,7 +11,7 @@
   %body
     .container
       %h1
-        FormMe
+        ForMe
       .fm-form
         .fm-form-control
           %input.full-width.fm-input{:type => "text", :required => "required"}/
@@ -19,6 +19,10 @@
             Placeholder
         .fm-form-control
           %input.full-width.fm-input{:type => "text"}/
+          %span.fm-placeholder
+            Placeholder
+        .fm-form-control
+          %textarea.full-width.fm-textarea{:name => "", :cols => "30", :rows => "4"}
           %span.fm-placeholder
             Placeholder
         .fm-form-control

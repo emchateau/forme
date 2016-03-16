@@ -256,3 +256,30 @@ body {
   text-indent: 1px;
   text-overflow: '';
 }
+
+.fm-textarea {
+  display: inline-block;
+  border: 2px solid #95a5a6;
+  border-radius: 6px;
+  padding: 10px 15px;
+  box-shadow: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.fm-textarea:invalid {
+  border-color: #c0392b;
+}
+.fm-textarea:focus {
+  border-color: #2980b9;
+}
+.fm-textarea:focus + .fm-placeholder {
+  top: 100%;
+  margin-top: 0;
+  font-size: 80%;
+}
+.fm-textarea + .fm-placeholder {
+  top: 0;
+  margin-top: 10px;
+}

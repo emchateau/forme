@@ -1,0 +1,28 @@
+// Textarea
+.fm-textarea {
+    display: inline-block;
+    border: 2px solid $fm_border_color;
+    border-radius: 6px;
+    padding: $fm_input_padding_vertical $fm_input_padding_horizontal;
+    box-shadow: none;
+    @include box-sizing(border-box);
+    background-color: $fm_input_bg;
+    &:invalid {
+        border-color: #c0392b;
+    }
+
+    &:focus {
+        border-color: $fm_active_color;
+
+        & + .fm-placeholder {
+            top: 100%;
+            margin-top: 0;
+            font-size: 80%;
+        }
+    }
+
+    & + .fm-placeholder {
+    	top: 0;
+    	margin-top: $fm_input_padding_vertical;
+    }
+}
