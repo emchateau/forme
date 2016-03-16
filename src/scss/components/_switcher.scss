@@ -1,7 +1,14 @@
 // Switcher
 // Only circle and we need only height !!!
-$switcher_h: 14px;
-$switcher_conteiner_h: 16px; //cant be smaller
+$switcher_h: 20px;
+$switcher_conteiner_h: 24px; //cant be smaller
+$switcher_radius: 12px;
+
+$switcher_full_w: $switcher_conteiner_h*2;
+@if $switcher_conteiner_h < $switcher_h {
+    $switcher_full_w: $switcher_h*2;
+}
+
 
 .fm-switcher {
     display: none;
@@ -9,14 +16,14 @@ $switcher_conteiner_h: 16px; //cant be smaller
     &:checked {
         & + .fm-placeholder-switcher {
             &:before {
-                left: #{$switcher_h + ($switcher_conteiner_h - $switcher_h)/2};
+                left: #{$switcher_full_w/2};
             }
         }
     }
 }
 
 .fm-placeholder-switcher {
-    padding-left: #{$switcher_conteiner_h*2 + 5px};
+    padding-left: #{$switcher_full_w + 5px}; // 4px additioan padding
     cursor: pointer;
     line-height: $switcher_conteiner_h;
 
@@ -34,7 +41,7 @@ $switcher_conteiner_h: 16px; //cant be smaller
 
         @include transition(all 0.2s ease-in-out);
 
-        border-radius: 10px;
+        border-radius: $switcher_radius;
     }
 
     &:after {
@@ -42,11 +49,11 @@ $switcher_conteiner_h: 16px; //cant be smaller
         content: '';
         left: 0;
         top: 50%;
-        width: $switcher_conteiner_h * 2;
+        width: $switcher_full_w;
         height: $switcher_conteiner_h;
         margin-top: #{-$switcher_conteiner_h / 2};
-        background-color: #fff;
+        background-color: $fm_input_bg;
         z-index: 1;
-        border-radius: 10px;
+        border-radius: $switcher_radius;
     }
 }
