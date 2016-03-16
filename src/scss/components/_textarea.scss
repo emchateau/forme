@@ -2,7 +2,7 @@
 .fm-textarea {
     display: inline-block;
     border: 2px solid $fm_border_color;
-    border-radius: 6px;
+    border-radius: $fm_radius;
     padding: $fm_input_padding_vertical $fm_input_padding_horizontal;
     box-shadow: none;
     @include box-sizing(border-box);

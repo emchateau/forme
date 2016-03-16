@@ -1,0 +1,21 @@
+// ProgressBar
+.fm-progress-bar {
+    position: relative;
+    background-color: $fm_input_bg;
+    display: block;
+    height: #{$fm_input_height / 2};
+    border-radius: $fm_radius;
+    overflow: hidden;
+
+    .fm-progress-bar-line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 0;
+        background-color: $fm_active_color;
+        z-index: 1;
+
+        @include transition(width 0.1s ease-in-out);
+    }
+}
