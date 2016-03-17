@@ -1,11 +1,14 @@
 @import "variables";
 
 @import "components/form";
+@import "components/input";
+@import "components/textarea";
 @import "components/radio";
 @import "components/checkbox";
-@import "components/switcher";
 @import "components/select";
-@import "components/textarea";
+
+@import "components/button";
 
 // additional
+@import "components/switcher";
 @import "components/progressbar";

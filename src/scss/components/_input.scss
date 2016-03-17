@@ -1,0 +1,38 @@
+// Input
+.fm-input {
+    display: inline-block;
+    border: $fm_input_border_w solid $fm_border_color;
+    border-radius: $fm_radius;
+    padding: $fm_input_padding_vertical $fm_input_padding_horizontal;
+    box-shadow: none;
+
+    @include box-sizing(border-box);
+
+    background-color: $fm_input_bg;
+
+    &:invalid {
+        border-color: #c0392b;
+    }
+
+    &:focus {
+        border-color: $fm_active_color;
+
+        & + .fm-placeholder {
+            bottom: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 80%;
+        }
+    }
+}
+
+.fm-placeholder {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+    left: 0;
+    bottom: 50%;
+    line-height: $fm_placeholder_height;
+    margin: #{-$fm_placeholder_height / 2} $fm_input_padding_horizontal;
+    transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,28 @@
+// Button
+.fm-button {
+    border: 0;
+    background-color: $fm_active_color;
+    padding: $fm_input_padding_vertical $fm_input_padding_horizontal;
+    box-shadow: none;
+    display: inline-block;
+    color: $fm_btn_color;
+    border-radius: $fm_radius;
+    cursor: pointer;
+	outline: none;
+	font-size: inherit;
+    @include transition(all 0.2s ease-in-out);
+
+    @include box-sizing(border-box);
+
+    &:hover {
+        background-color: darken($fm_active_color, 10%);
+    }
+}
+
+// input{
+// 	&.fm-button {
+// 		&[type="submit"]{
+// 			text-transform: uppercase;
+// 		}
+// 	}
+// }
