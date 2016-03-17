@@ -1,6 +1,6 @@
 // Checbox
 $fm_checkbox_h: $fm_input_height / 2;
-$fm_checkbox_border_w: $fm_input_border_w / 2;
+$fm_checkbox_border_w: $fm_input_border_w;
 
 .fm-checkbox {
     display: none;
@@ -20,7 +20,7 @@ $fm_checkbox_border_w: $fm_input_border_w / 2;
 .fm-placeholder-checkbox {
     padding-left: #{$fm_checkbox_h * 1.5};
     cursor: pointer;
-
+    @include box-sizing(border-box);
     &:before {
         position: absolute;
         content: '\2713';
@@ -31,6 +31,7 @@ $fm_checkbox_border_w: $fm_input_border_w / 2;
         height: $fm_checkbox_h;
         margin-top: #{-1 * ($fm_checkbox_h + $fm_checkbox_border_w) / 2};
         line-height: $fm_checkbox_h;
+        border: $fm_checkbox_border_w solid transparent;
         margin-left: 0;
         visibility: hidden;
         z-index: 2;

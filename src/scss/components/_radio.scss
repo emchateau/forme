@@ -1,7 +1,7 @@
 // Radio
 $fm_radio_h: $fm_input_height / 2;
 $fm_radio_circle_active_h: $fm_radio_h * 0.6;
-$fm_radio_border_w: $fm_input_border_w / 2;
+$fm_radio_border_w: $fm_input_border_w;
 
 .fm-radio-wrap {
     position: relative;
@@ -37,7 +37,7 @@ $fm_radio_border_w: $fm_input_border_w / 2;
         width: #{$fm_radio_circle_active_h};
         height: #{$fm_radio_circle_active_h};
         margin-top: #{-1 * ($fm_radio_circle_active_h - $fm_radio_border_w) / 2};
-        margin-left: #{($fm_radio_h - $fm_radio_circle_active_h + $fm_radio_border_w) / 2};
+        margin-left: #{($fm_radio_h - $fm_radio_circle_active_h) / 2 + $fm_radio_border_w};
         border-radius: #{$fm_radius / 2};
         border-radius: 50%;
         background-color: $fm_active_color;

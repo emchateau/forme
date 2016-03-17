@@ -13,48 +13,57 @@
       %h1
         ForMe
       %form.fm-form
-        .fm-form-control
-          %input.full-width.fm-input{:type => "text"}/
-          %span.fm-placeholder
-            Placeholder
-        .fm-form-control
-          %input.full-width.fm-input{:type => "text"}/
-          %span.fm-placeholder
-            Placeholder
-        .fm-form-control
-          %textarea.full-width.fm-input{:name => "", :cols => "30", :rows => "4"}
-          %span.fm-placeholder
-            Placeholder
-        .fm-form-control
-          %input.fm-button.full-width{:type => "submit", :value => "Submit"}/
-        .fm-form-control
-          %input.fm-checkbox{:type => "checkbox", :id => "checbox_id"}/
-          %label.fm-placeholder-checkbox{"for"=>"checbox_id"}
-            Checkbox
-        .fm-form-control
-          .fm-radio-wrap
-            %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio1", :type => "radio", :value => "radio1"}/
-            %label.fm-placeholder-radio{"for"=>"fm_radio1"}
-              Radio 1
-          .fm-radio-wrap
-            %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio2", :type => "radio", :value => "radio2"}/
-            %label.fm-placeholder-radio{"for"=>"fm_radio2"}
-              Radio 2
-          .fm-radio-wrap
-            %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio3", :type => "radio", :value => "radio3"}/
-            %label.fm-placeholder-radio{"for"=>"fm_radio3"}
-              Radio 3
-        .fm-form-control
-          .fm-select-wrap
-            %select.fm-select
-              %option{:value => "option1"} Option 1
-              %option{:value => "option2"} Option 2
-              %option{:value => "option3"} Option 3
-              %option{:value => "option4"} Option 4
-        .fm-form-control
-          %input.fm-switcher{:type => "checkbox", :id => "switcher_id"}/
-          %label.fm-placeholder-switcher{"for"=>"switcher_id"}
-            Switcher
+        .fm-form-row
+          .fm-form-control
+            %input.full-width.fm-input{:type => "text"}/
+            %span.fm-placeholder
+              Placeholder
+        .fm-form-row
+          .fm-form-control
+            %input.full-width.fm-input{:type => "text"}/
+            %span.fm-placeholder
+              Placeholder
+        .fm-form-row
+          .fm-form-control
+            %textarea.full-width.fm-input{:name => "", :cols => "30", :rows => "4"}
+            %span.fm-placeholder
+              Placeholder
+        .fm-form-row
+          .fm-form-control
+            %input.fm-button.full-width{:type => "submit", :value => "Submit"}/
+        .fm-form-row
+          .fm-form-control
+            %input.fm-checkbox{:type => "checkbox", :id => "checbox_id"}/
+            %label.fm-placeholder-checkbox{"for"=>"checbox_id"}
+              Checkbox
+        .fm-form-row
+          .fm-form-control
+            .fm-radio-wrap
+              %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio1", :type => "radio", :value => "radio1"}/
+              %label.fm-placeholder-radio{"for"=>"fm_radio1"}
+                Radio 1
+            .fm-radio-wrap
+              %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio2", :type => "radio", :value => "radio2"}/
+              %label.fm-placeholder-radio{"for"=>"fm_radio2"}
+                Radio 2
+            .fm-radio-wrap
+              %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio3", :type => "radio", :value => "radio3"}/
+              %label.fm-placeholder-radio{"for"=>"fm_radio3"}
+                Radio 3
+        .fm-form-row
+          .fm-form-control
+            .fm-select-wrap
+              %select.fm-select
+                %option{:value => "option1"} Option 1
+                %option{:value => "option2"} Option 2
+                %option{:value => "option3"} Option 3
+                %option{:value => "option4"} Option 4
+        .fm-form-row
+          .fm-form-control
+            %input.fm-switcher{:type => "checkbox", :id => "switcher_id"}/
+            %label.fm-placeholder-switcher{"for"=>"switcher_id"}
+              Switcher
+        .fm-form-row
         .fm-form-control
           .fm-progress-bar
             .fm-progress-bar-line{:style => "width:70%"}
