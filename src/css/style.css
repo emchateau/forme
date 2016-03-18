@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic);
 body {
-  background-color: #e6e6e6;
   font-family: 'PT Sans', sans-serif;
   color: #2c3e50;
   font-size: 16px;
@@ -16,20 +15,6 @@ body {
   position: relative;
   margin-top: 21.6px;
   margin-bottom: 21.6px;
-}
-
-.container {
-  width: 350px;
-  margin: 0 auto;
-}
-
-.full-width {
-  width: 100%;
-  display: block;
-}
-
-.inline {
-  display: inline-block;
 }
 
 .fm-input {
@@ -195,6 +180,7 @@ textarea.fm-input + .fm-placeholder {
   border-radius: 6px;
   overflow: hidden;
   display: inline-block;
+  background-color: #ffffff;
 }
 .fm-select-wrap:before {
   position: absolute;
@@ -259,6 +245,7 @@ textarea.fm-input + .fm-placeholder {
   border: 2px solid #2980b9;
 }
 .fm-button:hover {
+  border-color: #20638f;
   background-color: #20638f;
 }
 
@@ -312,6 +299,10 @@ textarea.fm-input + .fm-placeholder {
   height: 20px;
   border-radius: 6px;
   overflow: hidden;
+  border: 2px solid #bdc3c7;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .fm-progress-bar .fm-progress-bar-line {
   position: absolute;
@@ -348,4 +339,18 @@ textarea.fm-input + .fm-placeholder {
 
 .fm-input:focus ~ .fm-ico {
   opacity: 0.2;
+}
+
+.fm-container {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.fm-full-width {
+  display: block;
+  width: 100%;
+}
+
+.fm-inline {
+  display: inline-block;
 }

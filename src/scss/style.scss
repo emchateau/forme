@@ -1,4 +1,5 @@
 @import "variables";
+@import "global";
 
 @import "components/form";
 @import "components/input";
@@ -15,3 +16,5 @@
 
 // Icons
 @import "components/icons";
+
+@import "components/helpers";
