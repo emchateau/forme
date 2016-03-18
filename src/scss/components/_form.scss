@@ -7,11 +7,17 @@ body {
     font-size: 16px;
 }
 
+* {
+    &:after,
+    &:before {
+        @include box-sizing(border-box);
+    }
+}
+
 .fm-form-control {
     position: relative;
     margin-top: $fm_placeholder_height * 1.2;
     margin-bottom: $fm_placeholder_height * 1.2;
-    // display: inline-block;
 }
 
 // General
@@ -23,4 +29,8 @@ body {
 .full-width {
     width: 100%;
     display: block;
+}
+
+.inline {
+    display: inline-block;
 }

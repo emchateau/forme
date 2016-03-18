@@ -1,11 +1,13 @@
 // Switcher
 $switcher_h: 20px;
 $switcher_conteiner_h: 24px;
-$switcher_radius: 12px;
+$switcher_radius: $switcher_conteiner_h/2;
 $switcher_full_w: $switcher_conteiner_h * 2;
+$fm_switcher_border_w: $fm_input_border_w;
 
 @if $switcher_conteiner_h < $switcher_h {
     $switcher_full_w: $switcher_h * 2;
+    $switcher_radius: $switcher_h/2;
 }
 
 .fm-switcher {
@@ -55,5 +57,6 @@ $switcher_full_w: $switcher_conteiner_h * 2;
         background-color: $fm_input_bg;
         z-index: 1;
         border-radius: $switcher_radius;
+        border: $fm_switcher_border_w solid $fm_border_color;
     }
 }

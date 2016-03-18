@@ -6,6 +6,12 @@ body {
   font-size: 16px;
 }
 
+*:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .fm-form-control {
   position: relative;
   margin-top: 21.6px;
@@ -20,6 +26,10 @@ body {
 .full-width {
   width: 100%;
   display: block;
+}
+
+.inline {
+  display: inline-block;
 }
 
 .fm-input {
@@ -91,8 +101,8 @@ textarea.fm-input + .fm-placeholder {
   top: 50%;
   width: 12px;
   height: 12px;
-  margin-top: -5px;
-  margin-left: 6px;
+  margin-top: -7px;
+  margin-left: 4px;
   border-radius: 3px;
   border-radius: 50%;
   background-color: #2980b9;
@@ -136,9 +146,6 @@ textarea.fm-input + .fm-placeholder {
 .fm-placeholder-checkbox {
   padding-left: 30px;
   cursor: pointer;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .fm-placeholder-checkbox:before {
   position: absolute;
@@ -149,7 +156,7 @@ textarea.fm-input + .fm-placeholder {
   width: 20px;
   height: 20px;
   margin-top: -11px;
-  line-height: 20px;
+  line-height: 16px;
   border: 2px solid transparent;
   margin-left: 0;
   visibility: hidden;
@@ -224,9 +231,6 @@ textarea.fm-input + .fm-placeholder {
   box-shadow: none;
   border: 0;
   outline: none;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   border: 2px solid #bdc3c7;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -250,9 +254,6 @@ textarea.fm-input + .fm-placeholder {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border: 2px solid #2980b9;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .fm-button:hover {
   background-color: #20638f;
@@ -298,6 +299,7 @@ textarea.fm-input + .fm-placeholder {
   background-color: #ffffff;
   z-index: 1;
   border-radius: 12px;
+  border: 2px solid #bdc3c7;
 }
 
 .fm-progress-bar {

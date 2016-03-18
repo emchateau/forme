@@ -13,8 +13,6 @@
     @include transition(all 0.2s ease-in-out);
     border: $fm_checkbox_border_w solid $fm_active_color;
 
-    @include box-sizing(border-box);
-
     &:hover {
         background-color: darken($fm_active_color, 10%);
     }
