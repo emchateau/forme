@@ -181,8 +181,8 @@ textarea.fm-input + .fm-placeholder {
   overflow: hidden;
   border-radius: 6px;
   overflow: hidden;
-  display: inline-block;
   background-color: #ffffff;
+  display: block;
 }
 .fm-select-wrap:before {
   position: absolute;
@@ -217,12 +217,13 @@ textarea.fm-input + .fm-placeholder {
 
 .fm-select {
   border-radius: 6px;
-  display: inline-block;
   padding: 8px 30px 8px 15px;
   box-shadow: none;
   border: 0;
   outline: none;
   border: 2px solid #bdc3c7;
+  display: block;
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;

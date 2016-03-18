@@ -4,8 +4,8 @@
     overflow: hidden;
     border-radius: 6px;
     overflow: hidden;
-    display: inline-block;
     background-color: $fm_input_bg;
+    display: block;
 
     &:before {
         position: absolute;
@@ -46,12 +46,13 @@
 
 .fm-select {
     border-radius: 6px;
-    display: inline-block;
     padding: $fm_select_padding_vertical #{$fm_select_padding_horizontal * 2} $fm_select_padding_vertical $fm_select_padding_horizontal;
     box-shadow: none;
     border: 0;
     outline: none;
     border: 2px solid $fm_border_color;
+    display: block;
+    width: 100%;
 
     // Hide arrow select arrow
     -webkit-appearance: none;
