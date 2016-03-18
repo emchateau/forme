@@ -5,6 +5,7 @@
     border-radius: 6px;
     overflow: hidden;
     display: inline-block;
+    background-color: $fm_input_bg;
 
     &:before {
         position: absolute;
@@ -28,7 +29,7 @@
         right: 0;
         top: 0;
 
-        // maybe in width and max-width
+        // maybe need add width and max-width
         max-width: 25px;
         width: 20%;
         pointer-events: none;
@@ -46,14 +47,13 @@
 .fm-select {
     border-radius: 6px;
     display: inline-block;
-    padding: $fm_select_padding_vertical #{$fm_select_padding_horizontal*2} $fm_select_padding_vertical $fm_select_padding_horizontal;
+    padding: $fm_select_padding_vertical #{$fm_select_padding_horizontal * 2} $fm_select_padding_vertical $fm_select_padding_horizontal;
     box-shadow: none;
     border: 0;
     outline: none;
-
     border: 2px solid $fm_border_color;
 
-    // Hide arrow
+    // Hide arrow select arrow
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;

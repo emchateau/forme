@@ -34,5 +34,6 @@
     bottom: 50%;
     line-height: $fm_placeholder_height;
     margin: #{-$fm_placeholder_height / 2} $fm_input_padding_horizontal;
-    transition: all 0.2s ease-in-out;
+
+    @include transition(all 0.1s ease-in-out);
 }

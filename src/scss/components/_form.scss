@@ -1,12 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic);
-
-body {
-    background-color: #e6e6e6;
-    font-family: 'PT Sans', sans-serif;
-    color: #2c3e50;
-    font-size: 16px;
-}
-
+// Forms
 * {
     &:after,
     &:before {
@@ -18,19 +10,4 @@ body {
     position: relative;
     margin-top: $fm_placeholder_height * 1.2;
     margin-bottom: $fm_placeholder_height * 1.2;
-}
-
-// General
-.container {
-    width: 350px;
-    margin: 0 auto;
-}
-
-.full-width {
-    width: 100%;
-    display: block;
-}
-
-.inline {
-    display: inline-block;
 }

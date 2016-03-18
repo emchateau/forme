@@ -6,6 +6,9 @@
     height: #{$fm_input_height / 2};
     border-radius: $fm_radius;
     overflow: hidden;
+    border: $fm_input_border_w solid $fm_border_color;
+
+    @include box-sizing(border-box);
 
     .fm-progress-bar-line {
         position: absolute;

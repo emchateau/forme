@@ -1,0 +1,24 @@
+// Icons
+.fm-ico-wrap {
+	.fm-input {
+		padding-right: $fm_input_padding_horizontal * 2;
+	}
+}
+.fm-ico {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: $fm_input_height;
+    margin: 0 $fm_input_padding_horizontal;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.5;
+
+    @include transition(opacity 0.1s ease-in-out);
+}
+
+.fm-input {
+    &:focus ~ .fm-ico {
+        opacity: 0.2;
+    }
+}

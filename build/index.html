@@ -2,66 +2,119 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Forme</title>
+    <title>ForMe - css form framework</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- / icons http://ionicons.com/ -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class='container'>
       <h1>
-        FormMe
+        ForMe
       </h1>
-      <div class='fm-form'>
-        <div class='fm-form-control'>
-          <input class='full-width fm-input' required='required' type='text'>
-          <span class='fm-placeholder'>
-            Placeholder
-          </span>
+      <form class='fm-form'>
+        <div class='fm-form-row'>
+          <div class='fm-form-control fm-ico-wrap'>
+            <input class='full-width fm-input' type='text'>
+            <span class='fm-placeholder'>
+              Placeholder
+            </span>
+            <span class='fm-ico'>
+              <i class='ion-android-person'></i>
+            </span>
+          </div>
         </div>
-        <div class='fm-form-control'>
-          <input class='full-width fm-input' type='text'>
-          <span class='fm-placeholder'>
-            Placeholder
-          </span>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <input class='full-width fm-input' type='text'>
+            <span class='fm-placeholder'>
+              Placeholder
+            </span>
+          </div>
         </div>
-        <div class='fm-form-control'>
-          <input class='fm-checkbox' id='checbox_id' type='checkbox'>
-          <label class='fm-placeholder-checkbox' for='checbox_id'>
-            Checkbox
-          </label>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <textarea class='full-width fm-input' cols='30' name='' rows='4'></textarea>
+            <span class='fm-placeholder'>
+              Placeholder
+            </span>
+          </div>
         </div>
-        <div class='fm-form-control'>
-          <div class='fm-radio-wrap'>
-            <input checked='checked' class='fm-radio' id='fm_radio1' name='fm_radio' type='radio' value='radio1'>
-            <label class='fm-placeholder-radio' for='fm_radio1'>
-              Radio 1
+        <div class='fm-form-row fm-ico-wrap'>
+          <div class='fm-form-control'>
+            <textarea class='full-width fm-input' cols='30' name='' rows='4'></textarea>
+            <span class='fm-placeholder'>
+              Placeholder
+            </span>
+            <span class='fm-ico'>
+              <i class='ion-android-mail'></i>
+            </span>
+          </div>
+        </div>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <input class='fm-button full-width' type='submit' value='Submit'>
+          </div>
+        </div>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <input class='fm-checkbox' id='checbox_id' type='checkbox'>
+            <label class='fm-placeholder-checkbox' for='checbox_id'>
+              Checkbox
             </label>
           </div>
-          <div class='fm-radio-wrap'>
-            <input checked='checked' class='fm-radio' id='fm_radio2' name='fm_radio' type='radio' value='radio2'>
-            <label class='fm-placeholder-radio' for='fm_radio2'>
-              Radio 2
-            </label>
+        </div>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <div class='fm-radio-wrap'>
+              <input checked='checked' class='fm-radio' id='fm_radio1' name='fm_radio' type='radio' value='radio1'>
+              <label class='fm-placeholder-radio' for='fm_radio1'>
+                Radio 1
+              </label>
+            </div>
+            <div class='fm-radio-wrap'>
+              <input checked='checked' class='fm-radio' id='fm_radio2' name='fm_radio' type='radio' value='radio2'>
+              <label class='fm-placeholder-radio' for='fm_radio2'>
+                Radio 2
+              </label>
+            </div>
+            <div class='fm-radio-wrap'>
+              <input checked='checked' class='fm-radio' id='fm_radio3' name='fm_radio' type='radio' value='radio3'>
+              <label class='fm-placeholder-radio' for='fm_radio3'>
+                Radio 3
+              </label>
+            </div>
           </div>
-          <div class='fm-radio-wrap'>
-            <input checked='checked' class='fm-radio' id='fm_radio3' name='fm_radio' type='radio' value='radio3'>
-            <label class='fm-placeholder-radio' for='fm_radio3'>
-              Radio 3
+        </div>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <div class='fm-select-wrap'>
+              <select class='fm-select'>
+                <option value='option1'>Option 1</option>
+                <option value='option2'>Option 2</option>
+                <option value='option3'>Option 3</option>
+                <option value='option4'>Option 4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <input class='fm-switcher' id='switcher_id' type='checkbox'>
+            <label class='fm-placeholder-switcher' for='switcher_id'>
+              Switcher
             </label>
           </div>
         </div>
+        <div class='fm-form-row'></div>
         <div class='fm-form-control'>
-          <div class='fm-select-wrap'>
-            <select class='fm-select'>
-              <option value='option1'>Option 1</option>
-              <option value='option2'>Option 2</option>
-              <option value='option3'>Option 3</option>
-              <option value='option4'>Option 4</option>
-            </select>
+          <div class='fm-progress-bar'>
+            <div class='fm-progress-bar-line' style='width:70%'></div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
