@@ -5,6 +5,8 @@
     border-radius: $fm_radius;
     padding: $fm_input_padding_vertical $fm_input_padding_horizontal;
     box-shadow: none;
+    display: block;
+    width: 100%;
 
     @include box-sizing(border-box);
 
