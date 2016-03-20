@@ -1,359 +1,90 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic);
-body {
-  font-family: 'PT Sans', sans-serif;
-  color: #2c3e50;
-  font-size: 16px;
-}
+/*
+Error: Undefined operation: "-1 times 12px2px".
+        on line 39 of F:/work_others/forme/src/scss/components/_radio.scss
+        from line 7 of F:/work_others/forme/src/scss/style.scss
 
-*:after, *:before {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.fm-form-control {
-  position: relative;
-  margin-top: 21.6px;
-  margin-bottom: 21.6px;
-}
-
-.fm-input {
-  display: inline-block;
-  border: 2px solid #bdc3c7;
-  border-radius: 6px;
-  padding: 10px 15px;
-  box-shadow: none;
-  display: block;
-  width: 100%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.fm-input:invalid {
-  border-color: #c0392b;
-}
-.fm-input:focus {
-  border-color: #2980b9;
-}
-.fm-input:focus + .fm-placeholder {
-  bottom: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 80%;
-}
-
-.fm-placeholder {
-  position: absolute;
-  z-index: 1;
-  opacity: 0.5;
-  left: 0;
-  bottom: 50%;
-  line-height: 18px;
-  margin: -9px 15px;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
-textarea.fm-input + .fm-placeholder {
-  bottom: 100%;
-  margin-bottom: -30px;
-}
-
-.fm-radio-wrap {
-  position: relative;
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.fm-radio {
-  display: none;
-}
-.fm-radio:checked + .fm-placeholder-radio:before {
-  opacity: 1;
-  visibility: visible;
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.fm-placeholder-radio {
-  padding-left: 30px;
-  cursor: pointer;
-}
-.fm-placeholder-radio:before {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 50%;
-  width: 12px;
-  height: 12px;
-  margin-top: -7px;
-  margin-left: 4px;
-  border-radius: 3px;
-  border-radius: 50%;
-  background-color: #2980b9;
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  z-index: 2;
-}
-.fm-placeholder-radio:after {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -11px;
-  border: 2px solid #bdc3c7;
-  border-radius: 3px;
-  border-radius: 50%;
-  z-index: 1;
-  background-color: #ffffff;
-}
-
-.fm-checkbox {
-  display: none;
-}
-.fm-checkbox:checked + .fm-placeholder-checkbox:before {
-  opacity: 1;
-  visibility: visible;
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.fm-placeholder-checkbox {
-  padding-left: 30px;
-  cursor: pointer;
-}
-.fm-placeholder-checkbox:before {
-  position: absolute;
-  content: '\2713';
-  left: 0;
-  top: 50%;
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  margin-top: -11px;
-  line-height: 16px;
-  border: 2px solid transparent;
-  margin-left: 0;
-  visibility: hidden;
-  z-index: 2;
-  opacity: 0;
-  color: #2980b9;
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.fm-placeholder-checkbox:after {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -11px;
-  border: 2px solid #bdc3c7;
-  border-radius: 3px;
-  background-color: #ffffff;
-  z-index: 1;
-}
-
-.fm-select-wrap {
-  position: relative;
-  overflow: hidden;
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: #ffffff;
-  display: block;
-}
-.fm-select-wrap:before {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 10%;
-  pointer-events: none;
-  content: '';
-  bottom: 0;
-  z-index: 2;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4px 4px 0 4px;
-  border-color: #2980b9 transparent transparent transparent;
-  margin: -2px 15px;
-}
-.fm-select-wrap:after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  max-width: 25px;
-  width: 20%;
-  pointer-events: none;
-  content: '';
-  bottom: 0;
-  z-index: 1;
-  background-color: #ffffff;
-  border-radius: 6px;
-  margin: 2px;
-}
-
-.fm-select {
-  border-radius: 6px;
-  padding: 8px 30px 8px 15px;
-  box-shadow: none;
-  border: 0;
-  outline: none;
-  border: 2px solid #bdc3c7;
-  display: block;
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: '';
-}
-
-.fm-button {
-  border: 0;
-  background-color: #2980b9;
-  padding: 10px 15px;
-  box-shadow: none;
-  display: inline-block;
-  color: #ffffff;
-  border-radius: 6px;
-  cursor: pointer;
-  outline: none;
-  font-size: inherit;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  border: 2px solid #2980b9;
-}
-.fm-button:hover {
-  border-color: #20638f;
-  background-color: #20638f;
-}
-
-.fm-switcher {
-  display: none;
-}
-.fm-switcher:checked + .fm-placeholder-switcher:before {
-  left: 24px;
-}
-
-.fm-placeholder-switcher {
-  padding-left: 53px;
-  cursor: pointer;
-  line-height: 24px;
-}
-.fm-placeholder-switcher:before {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: 2px;
-  background-color: #2980b9;
-  z-index: 2;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  border-radius: 12px;
-}
-.fm-placeholder-switcher:after {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 50%;
-  width: 48px;
-  height: 24px;
-  margin-top: -12px;
-  background-color: #ffffff;
-  z-index: 1;
-  border-radius: 12px;
-  border: 2px solid #bdc3c7;
-}
-
-.fm-progress-bar {
-  position: relative;
-  background-color: #ffffff;
-  display: block;
-  height: 20px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 2px solid #bdc3c7;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.fm-progress-bar .fm-progress-bar-line {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  width: 0;
-  background-color: #2980b9;
-  z-index: 1;
-  -moz-transition: width 0.1s ease-in-out;
-  -o-transition: width 0.1s ease-in-out;
-  -webkit-transition: width 0.1s ease-in-out;
-  transition: width 0.1s ease-in-out;
-}
-
-.fm-ico-wrap .fm-input {
-  padding-right: 30px;
-}
-
-.fm-ico {
-  position: absolute;
-  right: 0;
-  top: 0;
-  line-height: 40px;
-  margin: 0 15px;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.5;
-  -moz-transition: opacity 0.1s ease-in-out;
-  -o-transition: opacity 0.1s ease-in-out;
-  -webkit-transition: opacity 0.1s ease-in-out;
-  transition: opacity 0.1s ease-in-out;
-}
-
-.fm-input:focus ~ .fm-ico {
-  opacity: 0.2;
-}
-
-.fm-container {
-  width: 350px;
-  margin: 0 auto;
-}
-
-.fm-full-width {
-  display: block;
-  width: 100%;
-}
-
-.fm-inline {
-  display: inline-block;
-}
+Backtrace:
+F:/work_others/forme/src/scss/components/_radio.scss:39
+F:/work_others/forme/src/scss/style.scss:7
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/operation.rb:85:in `_perform'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/operation.rb:82:in `_perform'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/operation.rb:64:in `_perform'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/interpolation.rb:100:in `_perform'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+org/jruby/RubyArray.java:2412:in `map'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+org/jruby/RubyArray.java:2412:in `map'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/E:/web_soft/fire.app.windows.1.14/fire.app/fire-app.jar!/hook/compass_patch.rb:132:in `update_stylesheet'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
+org/jruby/RubyProc.java:271:in `call'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/jruby/listen-1.3.1/lib/listen/listener.rb:252:in `on_change'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/jruby/listen-1.3.1/lib/listen/listener.rb:290:in `initialize_adapter'
+org/jruby/RubyProc.java:271:in `call'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/jruby/listen-1.3.1/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+E:/web_soft/fire.app.windows.1.14/fire.app/lib/ruby/jruby/listen-1.3.1/lib/listen/adapter.rb:297:in `start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined operation: \"-1 times 12px2px\".\A         on line 39 of F:/work_others/forme/src/scss/components/_radio.scss\A         from line 7 of F:/work_others/forme/src/scss/style.scss"; }

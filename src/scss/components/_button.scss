@@ -8,10 +8,16 @@
     color: $fm_btn_color;
     border-radius: $fm_radius;
     cursor: pointer;
-	outline: none;
-	font-size: inherit;
+    outline: none;
+    font-size: inherit;
+
     @include transition(all 0.2s ease-in-out);
+
     border: $fm_checkbox_border_w solid $fm_active_color;
+    font-size: $fm_font_size;
+    line-height: $fm_font_line_h;
+
+    @include box-sizing(border-box);
 
     &:hover {
         border-color: darken($fm_active_color, 10%);
@@ -20,9 +26,9 @@
 }
 
 // input{
-// 	&.fm-button {
-// 		&[type="submit"]{
-// 			text-transform: uppercase;
-// 		}
-// 	}
+//  &.fm-button {
+//      &[type="submit"]{
+//          text-transform: uppercase;
+//      }
+//  }
 // }

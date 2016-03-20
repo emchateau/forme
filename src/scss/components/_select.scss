@@ -50,10 +50,11 @@
     box-shadow: none;
     border: 0;
     outline: none;
-    border: 2px solid $fm_border_color;
+    border: $fm_input_border_w solid $fm_border_color;
     display: block;
     width: 100%;
-
+    font-size: $fm_font_size;
+    line-height: $fm_font_line_h;
     // Hide arrow select arrow
     -webkit-appearance: none;
     -moz-appearance: none;
