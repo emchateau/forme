@@ -54,6 +54,7 @@ body {
   bottom: 50%;
   line-height: 18px;
   margin: -9px 15px;
+  z-index: 0;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
@@ -201,9 +202,9 @@ textarea.fm-input + .fm-placeholder {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 4px 4px 0 4px;
+  border-width: 6px 6px 0 6px;
   border-color: #2980b9 transparent transparent transparent;
-  margin: -2px 15px;
+  margin: -3px 15px;
 }
 .fm-select-wrap:after {
   position: absolute;
@@ -235,6 +236,10 @@ textarea.fm-input + .fm-placeholder {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: '';
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .fm-button {

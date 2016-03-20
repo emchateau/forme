@@ -1,8 +1,10 @@
 // Select
+$fm_select_arrow_h: 6px;
+
 .fm-select-wrap {
     position: relative;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: $fm_radius;;
     overflow: hidden;
     background-color: $fm_input_bg;
     display: block;
@@ -19,9 +21,9 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 4px 4px 0 4px;
+        border-width: $fm_select_arrow_h $fm_select_arrow_h 0 $fm_select_arrow_h;
         border-color: $fm_active_color transparent transparent transparent;
-        margin: -2px #{$fm_input_padding_horizontal};
+        margin: #{-1 * $fm_select_arrow_h / 2} #{$fm_input_padding_horizontal};
     }
 
     &:after {
@@ -55,9 +57,15 @@
     width: 100%;
     font-size: $fm_font_size;
     line-height: $fm_font_line_h;
+
     // Hide arrow select arrow
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+}
+
+// Hide arrow select arrow IE 10
+select::-ms-expand {
+    display: none;
 }
