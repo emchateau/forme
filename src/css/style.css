@@ -94,7 +94,7 @@ textarea.fm-input + .fm-placeholder {
   top: 50%;
   width: 12px;
   height: 12px;
-  margin-top: -7px;
+  margin-top: -6px;
   margin-left: 4px;
   border-radius: 3px;
   border-radius: 50%;
@@ -116,7 +116,7 @@ textarea.fm-input + .fm-placeholder {
   top: 50%;
   width: 20px;
   height: 20px;
-  margin-top: -11px;
+  margin-top: -10px;
   border: 2px solid #bdc3c7;
   border-radius: 3px;
   border-radius: 50%;
@@ -148,7 +148,7 @@ textarea.fm-input + .fm-placeholder {
   text-align: center;
   width: 20px;
   height: 20px;
-  margin-top: -11px;
+  margin-top: -10px;
   line-height: 16px;
   border: 2px solid transparent;
   margin-left: 0;
@@ -172,7 +172,7 @@ textarea.fm-input + .fm-placeholder {
   top: 50%;
   width: 20px;
   height: 20px;
-  margin-top: -11px;
+  margin-top: -10px;
   border: 2px solid #bdc3c7;
   border-radius: 3px;
   background-color: #ffffff;

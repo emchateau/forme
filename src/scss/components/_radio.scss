@@ -36,9 +36,7 @@ $fm_radio_border_w: $fm_input_border_w;
         top: 50%;
         width: #{$fm_radio_circle_active_h};
         height: #{$fm_radio_circle_active_h};
-        
-        // TODO: wrong centering position
-        margin-top: #{-1 * ($fm_radio_circle_active_h + $fm_radio_border_w) / 2};
+        margin-top: #{-1 * ($fm_radio_circle_active_h) / 2};
         margin-left: #{($fm_radio_h - $fm_radio_circle_active_h ) / 2};
         
         border-radius: #{$fm_radius / 2};
@@ -60,7 +58,7 @@ $fm_radio_border_w: $fm_input_border_w;
         top: 50%;
         width: #{$fm_radio_h};
         height: #{$fm_radio_h};
-        margin-top: #{-1 * ($fm_radio_h + $fm_radio_border_w) / 2};
+        margin-top: #{-1 * ($fm_radio_h) / 2};
         border: $fm_radio_border_w solid $fm_border_color;
         border-radius: #{$fm_radius / 2};
         border-radius: 50%;
