@@ -86,6 +86,7 @@ textarea.fm-input + .fm-placeholder {
 .fm-placeholder-radio {
   padding-left: 30px;
   cursor: pointer;
+  display: inline-block;
 }
 .fm-placeholder-radio:before {
   position: absolute;
@@ -139,6 +140,7 @@ textarea.fm-input + .fm-placeholder {
 .fm-placeholder-checkbox {
   padding-left: 30px;
   cursor: pointer;
+  display: inline-block;
 }
 .fm-placeholder-checkbox:before {
   position: absolute;

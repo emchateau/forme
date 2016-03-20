@@ -20,6 +20,7 @@ $fm_checkbox_border_w: $fm_input_border_w;
 .fm-placeholder-checkbox {
     padding-left: #{$fm_checkbox_h * 1.5};
     cursor: pointer;
+    display: inline-block;
     &:before {
         position: absolute;
         content: '\2713';
