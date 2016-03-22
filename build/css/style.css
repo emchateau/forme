@@ -3,6 +3,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   color: #2c3e50;
   font-size: 16px;
+  line-height: 1.2;
 }
 
 *:after, *:before {
@@ -13,8 +14,8 @@ body {
 
 .fm-form-control {
   position: relative;
-  margin-top: 21.6px;
-  margin-bottom: 21.6px;
+  margin-top: 25.2px;
+  margin-bottom: 25.2px;
 }
 
 .fm-input {
@@ -25,6 +26,8 @@ body {
   box-shadow: none;
   display: block;
   width: 100%;
+  font-size: 14px;
+  line-height: 18px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -83,6 +86,7 @@ textarea.fm-input + .fm-placeholder {
 .fm-placeholder-radio {
   padding-left: 30px;
   cursor: pointer;
+  display: inline-block;
 }
 .fm-placeholder-radio:before {
   position: absolute;
@@ -91,7 +95,7 @@ textarea.fm-input + .fm-placeholder {
   top: 50%;
   width: 12px;
   height: 12px;
-  margin-top: -7px;
+  margin-top: -6px;
   margin-left: 4px;
   border-radius: 3px;
   border-radius: 50%;
@@ -113,7 +117,7 @@ textarea.fm-input + .fm-placeholder {
   top: 50%;
   width: 20px;
   height: 20px;
-  margin-top: -11px;
+  margin-top: -10px;
   border: 2px solid #bdc3c7;
   border-radius: 3px;
   border-radius: 50%;
@@ -136,6 +140,7 @@ textarea.fm-input + .fm-placeholder {
 .fm-placeholder-checkbox {
   padding-left: 30px;
   cursor: pointer;
+  display: inline-block;
 }
 .fm-placeholder-checkbox:before {
   position: absolute;
@@ -145,7 +150,7 @@ textarea.fm-input + .fm-placeholder {
   text-align: center;
   width: 20px;
   height: 20px;
-  margin-top: -11px;
+  margin-top: -10px;
   line-height: 16px;
   border: 2px solid transparent;
   margin-left: 0;
@@ -169,7 +174,7 @@ textarea.fm-input + .fm-placeholder {
   top: 50%;
   width: 20px;
   height: 20px;
-  margin-top: -11px;
+  margin-top: -10px;
   border: 2px solid #bdc3c7;
   border-radius: 3px;
   background-color: #ffffff;
@@ -224,6 +229,8 @@ textarea.fm-input + .fm-placeholder {
   border: 2px solid #bdc3c7;
   display: block;
   width: 100%;
+  font-size: 14px;
+  line-height: 18px;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -246,6 +253,11 @@ textarea.fm-input + .fm-placeholder {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border: 2px solid #2980b9;
+  font-size: 14px;
+  line-height: 18px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .fm-button:hover {
   border-color: #20638f;
@@ -345,7 +357,7 @@ textarea.fm-input + .fm-placeholder {
 }
 
 .fm-container {
-  width: 350px;
+  width: 320px;
   margin: 0 auto;
 }
 

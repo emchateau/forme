@@ -20,6 +20,7 @@ $fm_checkbox_border_w: $fm_input_border_w;
 .fm-placeholder-checkbox {
     padding-left: #{$fm_checkbox_h * 1.5};
     cursor: pointer;
+    display: inline-block;
     &:before {
         position: absolute;
         content: '\2713';
@@ -28,7 +29,7 @@ $fm_checkbox_border_w: $fm_input_border_w;
         text-align: center;
         width: $fm_checkbox_h;
         height: $fm_checkbox_h;
-        margin-top: #{-1 * ($fm_checkbox_h + $fm_checkbox_border_w) / 2};
+        margin-top: #{-1 * ($fm_checkbox_h) / 2};
         line-height: $fm_checkbox_h - 2*$fm_checkbox_border_w;
         border: $fm_checkbox_border_w solid transparent;
         margin-left: 0;
@@ -70,7 +71,7 @@ $fm_checkbox_border_w: $fm_input_border_w;
         top: 50%;
         width: #{$fm_checkbox_h};
         height: #{$fm_checkbox_h};
-        margin-top: #{-1 * ($fm_checkbox_h + $fm_checkbox_border_w) / 2};
+        margin-top: #{-1 * ($fm_checkbox_h) / 2};
         border: $fm_checkbox_border_w solid $fm_border_color;
         border-radius: #{$fm_radius / 2};
         background-color: $fm_input_bg;

@@ -1,4 +1,5 @@
 @import "compass/css3";
+
 // Config
 $fm_input_padding_vertical: 10px;
 $fm_input_padding_horizontal: 15px;
@@ -7,7 +8,6 @@ $fm_select_padding_vertical: $fm_input_padding_vertical - 2px;
 $fm_select_padding_horizontal: 15px;
 
 $fm_placeholder_height: 18px;
-$fm_input_height: 40px;
 
 $fm_radius: 6px;
 
@@ -19,6 +19,11 @@ $fm_border_color: #bdc3c7;
 $fm_input_bg: #ffffff;
 $fm_btn_color: #ffffff;
 
+ $fm_font_size: 14px;
+ $fm_font_line_h: 18px;
+
+$fm_input_height: $fm_input_padding_vertical * 2 + $fm_font_line_h + $fm_input_border_w;
 $fm_color_error: #c0392b;
 $fm_color_warning: #c0392b;
 $fm_color_ok: #27ae60;
+
