@@ -26,6 +26,17 @@
             font-size: 80%;
         }
     }
+    &.fm-warning {
+        border-color: $fm_color_warning;
+    }
+
+    &.fm-invalid {
+        border-color: $fm_color_error;
+    }
+
+    &.fm-valid {
+        border-color: $fm_color_ok;
+    }
 }
 
 .fm-placeholder {
@@ -39,3 +50,4 @@
 
     @include transition(all 0.1s ease-in-out);
 }
+
