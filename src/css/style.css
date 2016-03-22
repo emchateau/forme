@@ -45,6 +45,15 @@ body {
   margin-bottom: 0;
   font-size: 80%;
 }
+.fm-input.fm-warning {
+  border-color: #c0392b;
+}
+.fm-input.fm-invalid {
+  border-color: #c0392b;
+}
+.fm-input.fm-valid {
+  border-color: #27ae60;
+}
 
 .fm-placeholder {
   position: absolute;
