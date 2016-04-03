@@ -6,6 +6,22 @@ body {
   line-height: 1.2;
 }
 
+.logo {
+  position: relative;
+}
+.logo .beta {
+  font-size: 45%;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  opacity: 0.67;
+  vertical-align: top;
+}
+
+hr {
+  border-bottom: 0;
+  border-top: 1px solid #e6e9ea;
+}
+
 *:after, *:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -38,12 +54,30 @@ body {
 }
 .fm-input:focus {
   border-color: #2980b9;
+  outline: none;
 }
 .fm-input:focus + .fm-placeholder {
   bottom: 100%;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 80%;
+}
+.fm-input.fm-warning {
+  border-color: #c0392b;
+}
+.fm-input.fm-invalid {
+  border-color: #c0392b;
+}
+.fm-input.fm-valid {
+  border-color: #27ae60;
+}
+.fm-input[disabled] {
+  background-color: #eaeded;
+  cursor: not-allowed;
+  border-color: #cbd0d3;
+}
+.fm-input[disabled] + .fm-placeholder {
+  opacity: 0.5;
 }
 
 .fm-placeholder {
@@ -54,10 +88,12 @@ body {
   bottom: 50%;
   line-height: 18px;
   margin: -9px 15px;
+  z-index: 0;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  pointer-events: none;
 }
 
 textarea.fm-input + .fm-placeholder {
@@ -69,6 +105,7 @@ textarea.fm-input + .fm-placeholder {
   position: relative;
   display: inline-block;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .fm-radio {
@@ -81,6 +118,16 @@ textarea.fm-input + .fm-placeholder {
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+.fm-radio[disabled] + .fm-placeholder-radio {
+  cursor: not-allowed;
+}
+.fm-radio[disabled] + .fm-placeholder-radio:before {
+  background-color: #cbd0d3;
+}
+.fm-radio[disabled] + .fm-placeholder-radio:after {
+  background-color: #eaeded;
+  border-color: #cbd0d3;
 }
 
 .fm-placeholder-radio {
@@ -131,10 +178,20 @@ textarea.fm-input + .fm-placeholder {
 .fm-checkbox:checked + .fm-placeholder-checkbox:before {
   opacity: 1;
   visibility: visible;
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  -moz-transform: scale(1) rotate(45deg);
+  -ms-transform: scale(1) rotate(45deg);
+  -webkit-transform: scale(1) rotate(45deg);
+  transform: scale(1) rotate(45deg);
+}
+.fm-checkbox[disabled] + .fm-placeholder-checkbox {
+  cursor: not-allowed;
+}
+.fm-checkbox[disabled] + .fm-placeholder-checkbox:before {
+  border-color: transparent #cbd0d3 #cbd0d3 transparent;
+}
+.fm-checkbox[disabled] + .fm-placeholder-checkbox:after {
+  background-color: #eaeded;
+  border-color: #cbd0d3;
 }
 
 .fm-placeholder-checkbox {
@@ -144,24 +201,24 @@ textarea.fm-input + .fm-placeholder {
 }
 .fm-placeholder-checkbox:before {
   position: absolute;
-  content: '\2713';
+  content: '';
   left: 0;
   top: 50%;
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  line-height: 16px;
-  border: 2px solid transparent;
-  margin-left: 0;
+  width: 6px;
+  height: 12px;
+  border-style: solid;
+  border-color: transparent #2980b9 #2980b9 transparent;
+  border-width: 0 3px 3px 0;
+  margin-top: -7px;
+  margin-left: 7px;
   visibility: hidden;
   z-index: 2;
   opacity: 0;
   color: #2980b9;
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -webkit-transform: scale(0);
-  transform: scale(0);
+  -moz-transform: scale(0) rotate(45deg);
+  -ms-transform: scale(0) rotate(45deg);
+  -webkit-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -201,9 +258,13 @@ textarea.fm-input + .fm-placeholder {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 4px 4px 0 4px;
+  border-width: 6px 6px 0 6px;
   border-color: #2980b9 transparent transparent transparent;
-  margin: -2px 15px;
+  margin: -3px 15px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .fm-select-wrap:after {
   position: absolute;
@@ -237,6 +298,10 @@ textarea.fm-input + .fm-placeholder {
   text-overflow: '';
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 .fm-button {
   border: 0;
   background-color: #2980b9;
@@ -247,14 +312,13 @@ textarea.fm-input + .fm-placeholder {
   border-radius: 6px;
   cursor: pointer;
   outline: none;
-  font-size: inherit;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   border: 2px solid #2980b9;
   font-size: 14px;
-  line-height: 18px;
+  line-height: normal;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -263,12 +327,49 @@ textarea.fm-input + .fm-placeholder {
   border-color: #20638f;
   background-color: #20638f;
 }
+.fm-button.fm-button-clean {
+  background-color: transparent;
+  border-color: transparent;
+  color: #2980b9;
+}
+.fm-button.fm-button-clean:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #20638f;
+}
+.fm-button.fm-button-outline {
+  border-color: #2980b9;
+  background-color: transparent;
+  color: #2980b9;
+}
+.fm-button.fm-button-outline:hover {
+  border-color: #2980b9;
+  background-color: #2980b9;
+  color: #FFF;
+}
+
+input.fm-button[type="submit"] {
+  height: 40px;
+}
 
 .fm-switcher {
   display: none;
 }
+.fm-switcher:checked + .fm-placeholder-switcher:after {
+  background-color: #94c6e7;
+}
 .fm-switcher:checked + .fm-placeholder-switcher:before {
   left: 24px;
+}
+.fm-switcher[disabled] + .fm-placeholder-switcher {
+  cursor: not-allowed;
+}
+.fm-switcher[disabled] + .fm-placeholder-switcher:before {
+  background-color: #cbd0d3;
+}
+.fm-switcher[disabled] + .fm-placeholder-switcher:after {
+  background-color: #eaeded;
+  border-color: #cbd0d3;
 }
 
 .fm-placeholder-switcher {
@@ -305,6 +406,10 @@ textarea.fm-input + .fm-placeholder {
   z-index: 1;
   border-radius: 12px;
   border: 2px solid #bdc3c7;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .fm-progress-bar {
