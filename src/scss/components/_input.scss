@@ -9,6 +9,7 @@
     width: 100%;
     font-size: $fm_font_size;
     line-height: $fm_font_line_h;
+    
     @include box-sizing(border-box);
 
     background-color: $fm_input_bg;
@@ -67,3 +68,8 @@
     pointer-events: none;
 }
 
+input {
+    &.fm-input {
+        height: $fm_input_height;
+    }
+}

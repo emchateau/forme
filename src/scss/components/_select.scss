@@ -50,7 +50,7 @@ $fm_select_arrow_h: 6px;
 
 .fm-select {
     border-radius: $fm_radius;
-    padding: $fm_select_padding_vertical #{$fm_select_padding_horizontal * 2} $fm_select_padding_vertical $fm_select_padding_horizontal;
+    padding: $fm_input_padding_vertical #{$fm_input_padding_horizontal * 2} $fm_input_padding_vertical $fm_input_padding_horizontal;
     box-shadow: none;
     border: 0;
     outline: none;
@@ -58,7 +58,8 @@ $fm_select_arrow_h: 6px;
     display: block;
     width: 100%;
     font-size: $fm_font_size;
-    line-height: $fm_font_line_h;
+    line-height: normal;
+    height: $fm_input_height;
 
     // Hide arrow select arrow
     -webkit-appearance: none;

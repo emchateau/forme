@@ -4,9 +4,6 @@
 $fm_input_padding_vertical: 10px;
 $fm_input_padding_horizontal: 15px;
 
-$fm_select_padding_vertical: $fm_input_padding_vertical - 2px;
-$fm_select_padding_horizontal: 15px;
-
 $fm_placeholder_height: 18px;
 
 $fm_radius: 6px;
@@ -24,7 +21,7 @@ $fm_switcher_bg_dot: $fm_active_color;
 $fm_switcher_bg_active: lighten($fm_active_color, 30%);
 
 $fm_font_size: 14px;
-$fm_font_line_h: 18px;
+$fm_font_line_h: 16px;
 
 $fm_input_height: $fm_input_padding_vertical * 2 + $fm_font_line_h + $fm_input_border_w * 2;
 $fm_color_error: #c0392b;

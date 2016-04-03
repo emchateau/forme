@@ -43,7 +43,7 @@ hr {
   display: block;
   width: 100%;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 16px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -96,6 +96,10 @@ hr {
   pointer-events: none;
 }
 
+input.fm-input {
+  height: 40px;
+}
+
 textarea.fm-input + .fm-placeholder {
   bottom: 100%;
   margin-bottom: -30px;
@@ -131,7 +135,7 @@ textarea.fm-input + .fm-placeholder {
 }
 
 .fm-placeholder-radio {
-  padding-left: 31.5px;
+  padding-left: 30px;
   cursor: pointer;
   display: inline-block;
 }
@@ -140,10 +144,10 @@ textarea.fm-input + .fm-placeholder {
   content: '';
   left: 0;
   top: 50%;
-  width: 12.6px;
-  height: 12.6px;
-  margin-top: -6.3px;
-  margin-left: 4.2px;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: 4px;
   border-radius: 3px;
   border-radius: 50%;
   background-color: #2980b9;
@@ -162,9 +166,9 @@ textarea.fm-input + .fm-placeholder {
   content: '';
   left: 0;
   top: 50%;
-  width: 21px;
-  height: 21px;
-  margin-top: -10.5px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
   border: 2px solid #bdc3c7;
   border-radius: 3px;
   border-radius: 50%;
@@ -195,7 +199,7 @@ textarea.fm-input + .fm-placeholder {
 }
 
 .fm-placeholder-checkbox {
-  padding-left: 31.5px;
+  padding-left: 30px;
   cursor: pointer;
   display: inline-block;
 }
@@ -229,9 +233,9 @@ textarea.fm-input + .fm-placeholder {
   content: '';
   left: 0;
   top: 50%;
-  width: 21px;
-  height: 21px;
-  margin-top: -10.5px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
   border: 2px solid #bdc3c7;
   border-radius: 3px;
   background-color: #ffffff;
@@ -283,7 +287,7 @@ textarea.fm-input + .fm-placeholder {
 
 .fm-select {
   border-radius: 6px;
-  padding: 8px 30px 8px 15px;
+  padding: 10px 30px 10px 15px;
   box-shadow: none;
   border: 0;
   outline: none;
@@ -291,7 +295,8 @@ textarea.fm-input + .fm-placeholder {
   display: block;
   width: 100%;
   font-size: 14px;
-  line-height: 18px;
+  line-height: normal;
+  height: 40px;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -349,7 +354,7 @@ select::-ms-expand {
 }
 
 input.fm-button[type="submit"] {
-  height: 42px;
+  height: 40px;
 }
 
 .fm-switcher {
@@ -416,7 +421,7 @@ input.fm-button[type="submit"] {
   position: relative;
   background-color: #ffffff;
   display: block;
-  height: 21px;
+  height: 20px;
   border-radius: 6px;
   overflow: hidden;
   border: 2px solid #bdc3c7;
@@ -446,7 +451,7 @@ input.fm-button[type="submit"] {
   position: absolute;
   right: 0;
   top: 0;
-  line-height: 42px;
+  line-height: 40px;
   margin: 0 15px;
   pointer-events: none;
   z-index: 1;
