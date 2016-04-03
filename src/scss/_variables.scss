@@ -26,8 +26,7 @@ $fm_switcher_bg_active: lighten($fm_active_color, 30%);
 $fm_font_size: 14px;
 $fm_font_line_h: 18px;
 
-$fm_input_height: $fm_input_padding_vertical * 2 + $fm_font_line_h + $fm_input_border_w;
+$fm_input_height: $fm_input_padding_vertical * 2 + $fm_font_line_h + $fm_input_border_w * 2;
 $fm_color_error: #c0392b;
 $fm_color_warning: #c0392b;
 $fm_color_ok: #27ae60;
-
