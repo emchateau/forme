@@ -65,6 +65,8 @@
         .fm-form-row
           .fm-form-control
             %input.fm-button{:type => "submit", :value => "Submit"}/
+            %input.fm-button.fm-button-outline{:type => "submit", :value => "Submit"}/
+            %input.fm-button.fm-button-clean{:type => "submit", :value => "Submit"}/
 
 
         %hr
@@ -90,7 +92,7 @@
           .fm-form-control
             %input.fm-checkbox{:type => "checkbox", :id => "checbox_id2", :disabled => "disabled"}/
             %label.fm-placeholder-checkbox{"for"=>"checbox_id2"}
-              Checkbox              
+              Checkbox
 
         .fm-form-row
           .fm-form-control
@@ -110,7 +112,7 @@
             .fm-radio-wrap
               %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio4", :type => "radio", :value => "radio3", :disabled => "disabled"}/
               %label.fm-placeholder-radio{"for"=>"fm_radio4"}
-                Radio 3                
+                Radio 3
 
         %h3
           Switcher
@@ -122,7 +124,7 @@
           .fm-form-control
             %input.fm-switcher{:type => "checkbox", :id => "switcher_id2", :disabled => "disabled"}/
             %label.fm-placeholder-switcher{"for"=>"switcher_id2"}
-              Switcher              
+              Switcher
 
 
         %h3
