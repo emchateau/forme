@@ -15,8 +15,26 @@ $fm_switcher_border_w: $fm_input_border_w;
 
     &:checked {
         & + .fm-placeholder-switcher {
+            &:after {
+                background-color: $fm_switcher_bg_active;
+            }
             &:before {
                 left: #{$switcher_full_w / 2};
+            }
+        }
+    }
+
+    // Disabled
+    &[disabled] {
+        & + .fm-placeholder-switcher {
+            cursor: not-allowed;
+
+            &:before {
+                background-color: $fm_input_disabled_border_color;
+            }
+            &:after {
+                background-color: $fm_input_disabled_bg;
+                border-color: $fm_input_disabled_border_color;
             }
         }
     }
@@ -38,7 +56,7 @@ $fm_switcher_border_w: $fm_input_border_w;
         height: $switcher_h;
         margin-top: #{-$switcher_h / 2};
         margin-left: #{($switcher_conteiner_h - $switcher_h) / 2};
-        background-color: $fm_active_color;
+        background-color: $fm_switcher_bg_dot;
         z-index: 2;
 
         @include transition(all 0.2s ease-in-out);
@@ -58,5 +76,7 @@ $fm_switcher_border_w: $fm_input_border_w;
         z-index: 1;
         border-radius: $switcher_radius;
         border: $fm_switcher_border_w solid $fm_border_color;
+        
+        @include transition(all 0.2s ease-in-out);
     }
 }

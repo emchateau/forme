@@ -7,6 +7,7 @@ $fm_radio_border_w: $fm_input_border_w;
     position: relative;
     display: inline-block;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .fm-radio {
@@ -19,6 +20,21 @@ $fm_radio_border_w: $fm_input_border_w;
                 visibility: visible;
 
                 @include transform(scale(1));
+            }
+        }
+    }
+
+    // Disabled
+    &[disabled] {
+        & + .fm-placeholder-radio {
+            cursor: not-allowed;
+
+            &:before {
+                background-color: $fm_input_disabled_border_color;
+            }
+            &:after {
+                background-color: $fm_input_disabled_bg;
+                border-color: $fm_input_disabled_border_color;
             }
         }
     }
@@ -37,9 +53,8 @@ $fm_radio_border_w: $fm_input_border_w;
         top: 50%;
         width: #{$fm_radio_circle_active_h};
         height: #{$fm_radio_circle_active_h};
-        margin-top: #{-1 * ($fm_radio_circle_active_h) / 2};
-        margin-left: #{($fm_radio_h - $fm_radio_circle_active_h ) / 2};
-        
+        margin-top: #{-1 * $fm_radio_circle_active_h / 2};
+        margin-left: #{($fm_radio_h - $fm_radio_circle_active_h) / 2};
         border-radius: #{$fm_radius / 2};
         border-radius: 50%;
         background-color: $fm_active_color;
@@ -59,7 +74,7 @@ $fm_radio_border_w: $fm_input_border_w;
         top: 50%;
         width: #{$fm_radio_h};
         height: #{$fm_radio_h};
-        margin-top: #{-1 * ($fm_radio_h) / 2};
+        margin-top: #{-1 * $fm_radio_h / 2};
         border: $fm_radio_border_w solid $fm_border_color;
         border-radius: #{$fm_radius / 2};
         border-radius: 50%;

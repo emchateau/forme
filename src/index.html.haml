@@ -11,9 +11,14 @@
 
   %body
     .fm-container
-      %h1
+      %h1.logo
         ForMe
+        %span.beta
+          alpha
+      %p
+        minimal css form framework
       %form.fm-form
+        %h3 Inputs
         .fm-form-row
           .fm-form-control.fm-ico-wrap
             %input.fm-input{:type => "text"}/
@@ -39,6 +44,14 @@
               Placeholder
         .fm-form-row
           .fm-form-control
+            .fm-select-wrap
+              %select.fm-select
+                %option{:value => "option1"} Option 1
+                %option{:value => "option2"} Option 2
+                %option{:value => "option3"} Option 3
+                %option{:value => "option4"} Option 4
+        .fm-form-row
+          .fm-form-control
             %textarea.fm-input{:name => "", :cols => "30", :rows => "4"}
             %span.fm-placeholder
               Placeholder
@@ -52,11 +65,35 @@
         .fm-form-row
           .fm-form-control
             %input.fm-button{:type => "submit", :value => "Submit"}/
+            %input.fm-button.fm-button-outline{:type => "submit", :value => "Submit"}/
+            %input.fm-button.fm-button-clean{:type => "submit", :value => "Submit"}/
+
+
+        %hr
+        %h3 Disabled
+        .fm-form-row
+          .fm-form-control
+            %input.fm-input{:type => "text", :disabled => "disabled"}/
+            %span.fm-placeholder
+              Placeholder
+        .fm-form-row
+          .fm-form-control
+            %textarea.fm-input{:name => "", :cols => "30", :rows => "4", :disabled => "disabled"}
+            %span.fm-placeholder
+              Placeholder
+
+        %h3
+          Checkbox and Radio
         .fm-form-row
           .fm-form-control
             %input.fm-checkbox{:type => "checkbox", :id => "checbox_id"}/
             %label.fm-placeholder-checkbox{"for"=>"checbox_id"}
               Checkbox
+          .fm-form-control
+            %input.fm-checkbox{:type => "checkbox", :id => "checbox_id2", :disabled => "disabled"}/
+            %label.fm-placeholder-checkbox{"for"=>"checbox_id2"}
+              Checkbox
+
         .fm-form-row
           .fm-form-control
             .fm-radio-wrap
@@ -71,20 +108,28 @@
               %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio3", :type => "radio", :value => "radio3"}/
               %label.fm-placeholder-radio{"for"=>"fm_radio3"}
                 Radio 3
-        .fm-form-row
-          .fm-form-control
-            .fm-select-wrap
-              %select.fm-select
-                %option{:value => "option1"} Option 1
-                %option{:value => "option2"} Option 2
-                %option{:value => "option3"} Option 3
-                %option{:value => "option4"} Option 4
+
+            .fm-radio-wrap
+              %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio4", :type => "radio", :value => "radio3", :disabled => "disabled"}/
+              %label.fm-placeholder-radio{"for"=>"fm_radio4"}
+                Radio 3
+
+        %h3
+          Switcher
         .fm-form-row
           .fm-form-control
             %input.fm-switcher{:type => "checkbox", :id => "switcher_id"}/
             %label.fm-placeholder-switcher{"for"=>"switcher_id"}
               Switcher
+          .fm-form-control
+            %input.fm-switcher{:type => "checkbox", :id => "switcher_id2", :disabled => "disabled"}/
+            %label.fm-placeholder-switcher{"for"=>"switcher_id2"}
+              Switcher
+
+
+        %h3
+          Progress bar
         .fm-form-row
-        .fm-form-control
-          .fm-progress-bar
-            .fm-progress-bar-line{:style => "width:70%"}
+          .fm-form-control
+            .fm-progress-bar
+              .fm-progress-bar-line{:style => "width:70%"}

@@ -9,13 +9,12 @@
     border-radius: $fm_radius;
     cursor: pointer;
     outline: none;
-    font-size: inherit;
 
-    @include transition(all 0.2s ease-in-out);
+    @include transition(all 0.15s ease-in-out);
 
-    border: $fm_checkbox_border_w solid $fm_active_color;
+    border: $fm_input_border_w solid $fm_active_color;
     font-size: $fm_font_size;
-    line-height: $fm_font_line_h;
+    line-height: normal;
 
     @include box-sizing(border-box);
 
@@ -23,12 +22,35 @@
         border-color: darken($fm_active_color, 10%);
         background-color: darken($fm_active_color, 10%);
     }
+
+    &.fm-button-clean {
+        background-color: transparent;
+        border-color: transparent;
+        color: $fm_active_color;
+        &:hover {
+            background-color: transparent;
+            border-color: transparent;
+            color: darken($fm_active_color, 10%);
+        }
+    }
+
+    &.fm-button-outline {
+        border-color: $fm_active_color;
+        background-color: transparent;
+        color: $fm_active_color;
+        &:hover {
+            border-color: $fm_active_color;
+            background-color: $fm_active_color;
+            color: #FFF;
+        }
+    }
 }
 
 // input{
-//  &.fm-button {
-//      &[type="submit"]{
-//          text-transform: uppercase;
-//      }
-//  }
-// }
+input {
+    &.fm-button {
+        &[type="submit"]{
+            height: $fm_input_height;
+        }
+    }
+}

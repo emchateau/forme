@@ -12,13 +12,14 @@
     @include box-sizing(border-box);
 
     background-color: $fm_input_bg;
-
+    
     &:invalid {
         border-color: #c0392b;
     }
 
     &:focus {
         border-color: $fm_active_color;
+        outline: none;
 
         & + .fm-placeholder {
             bottom: 100%;
@@ -27,6 +28,8 @@
             font-size: 80%;
         }
     }
+
+    // Errors
     &.fm-warning {
         border-color: $fm_color_warning;
     }
@@ -37,6 +40,17 @@
 
     &.fm-valid {
         border-color: $fm_color_ok;
+    }
+
+    // Disabled
+    &[disabled] {
+        background-color: $fm_input_disabled_bg;
+        cursor: not-allowed;
+        border-color: $fm_input_disabled_border_color;
+        
+        & + .fm-placeholder {
+            opacity: 0.5;
+        }
     }
 }
 
@@ -50,5 +64,6 @@
     margin: #{-$fm_placeholder_height / 2} $fm_input_padding_horizontal;
     z-index: 0;
     @include transition(all 0.1s ease-in-out);
+    pointer-events: none;
 }
 
