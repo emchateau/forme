@@ -19,6 +19,7 @@
 
     &:focus {
         border-color: $fm_active_color;
+        outline: none;
 
         & + .fm-placeholder {
             bottom: 100%;

@@ -54,6 +54,7 @@ hr {
 }
 .fm-input:focus {
   border-color: #2980b9;
+  outline: none;
 }
 .fm-input:focus + .fm-placeholder {
   bottom: 100%;
@@ -177,16 +178,16 @@ textarea.fm-input + .fm-placeholder {
 .fm-checkbox:checked + .fm-placeholder-checkbox:before {
   opacity: 1;
   visibility: visible;
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  -moz-transform: scale(1) rotate(45deg);
+  -ms-transform: scale(1) rotate(45deg);
+  -webkit-transform: scale(1) rotate(45deg);
+  transform: scale(1) rotate(45deg);
 }
 .fm-checkbox[disabled] + .fm-placeholder-checkbox {
   cursor: not-allowed;
 }
 .fm-checkbox[disabled] + .fm-placeholder-checkbox:before {
-  background-color: #cbd0d3;
+  border-color: transparent #cbd0d3 #cbd0d3 transparent;
 }
 .fm-checkbox[disabled] + .fm-placeholder-checkbox:after {
   background-color: #eaeded;
@@ -200,24 +201,24 @@ textarea.fm-input + .fm-placeholder {
 }
 .fm-placeholder-checkbox:before {
   position: absolute;
-  content: '\2713';
+  content: '';
   left: 0;
   top: 50%;
-  text-align: center;
-  width: 21px;
-  height: 21px;
-  margin-top: -10.5px;
-  line-height: 17px;
-  border: 2px solid transparent;
-  margin-left: 0;
+  width: 6px;
+  height: 12px;
+  border-style: solid;
+  border-color: transparent #2980b9 #2980b9 transparent;
+  border-width: 0 3px 3px 0;
+  margin-top: -7px;
+  margin-left: 8px;
   visibility: hidden;
   z-index: 2;
   opacity: 0;
   color: #2980b9;
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -webkit-transform: scale(0);
-  transform: scale(0);
+  -moz-transform: scale(0) rotate(45deg);
+  -ms-transform: scale(0) rotate(45deg);
+  -webkit-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -260,6 +261,10 @@ textarea.fm-input + .fm-placeholder {
   border-width: 6px 6px 0 6px;
   border-color: #2980b9 transparent transparent transparent;
   margin: -3px 15px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .fm-select-wrap:after {
   position: absolute;
@@ -307,10 +312,10 @@ select::-ms-expand {
   border-radius: 6px;
   cursor: pointer;
   outline: none;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   border: 2px solid #2980b9;
   font-size: 14px;
   line-height: normal;

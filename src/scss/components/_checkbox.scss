@@ -11,7 +11,7 @@ $fm_checkbox_border_w: $fm_input_border_w;
                 opacity: 1;
                 visibility: visible;
 
-                @include transform(scale(1));
+                @include transform(scale(1) rotate(45deg));
             }
         }
     }
@@ -22,7 +22,7 @@ $fm_checkbox_border_w: $fm_input_border_w;
             cursor: not-allowed;
 
             &:before {
-                background-color: $fm_input_disabled_border_color;
+                border-color: transparent $fm_input_disabled_border_color $fm_input_disabled_border_color transparent;
             }
             &:after {
                 background-color: $fm_input_disabled_bg;
@@ -37,49 +37,50 @@ $fm_checkbox_border_w: $fm_input_border_w;
     cursor: pointer;
     display: inline-block;
 
-    &:before {
-        position: absolute;
-        content: '\2713';
-        left: 0;
-        top: 50%;
-        text-align: center;
-        width: $fm_checkbox_h;
-        height: $fm_checkbox_h;
-        margin-top: #{-1 * $fm_checkbox_h / 2};
-        line-height: $fm_checkbox_h - 2 * $fm_checkbox_border_w;
-        border: $fm_checkbox_border_w solid transparent;
-        margin-left: 0;
-        visibility: hidden;
-        z-index: 2;
-        opacity: 0;
-        color: $fm_active_color;
-
-        @include transform(scale(0));
-
-        @include transition(all 0.2s ease-in-out);
-    }
-
-    //  CSS checkmark
     // &:before {
     //     position: absolute;
-    //     content: '';
+    //     content: '\2713';
     //     left: 0;
     //     top: 50%;
-    //     width: 6px;
-    //     height: 12px;
-    //     border: solid $fm_active_color;
-    //     border-width: 0 3px 3px 0;
-    //     margin-left: 7px;
-    //     margin-top: -9px;
+    //     text-align: center;
+    //     width: $fm_checkbox_h;
+    //     height: $fm_checkbox_h;
+    //     margin-top: #{-1 * $fm_checkbox_h / 2};
+    //     line-height: $fm_checkbox_h - 2 * $fm_checkbox_border_w;
+    //     border: $fm_checkbox_border_w solid transparent;
+    //     margin-left: 0;
     //     visibility: hidden;
     //     z-index: 2;
     //     opacity: 0;
     //     color: $fm_active_color;
 
-    //     @include transform(scale(0) rotate(45deg));
+    //     @include transform(scale(0));
 
     //     @include transition(all 0.2s ease-in-out);
     // }
+
+    //  CSS checkmark
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 50%;
+        width: 6px;
+        height: 12px;
+        border-style: solid;
+        border-color: transparent $fm_active_color $fm_active_color transparent;
+        border-width: 0 3px 3px 0;
+        margin-top: -7px;
+        margin-left: 8px;
+        visibility: hidden;
+        z-index: 2;
+        opacity: 0;
+        color: $fm_active_color;
+
+        @include transform(scale(0) rotate(45deg));
+
+        @include transition(all 0.2s ease-in-out);
+    }
 
     &:after {
         position: absolute;
