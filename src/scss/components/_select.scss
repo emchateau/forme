@@ -32,25 +32,20 @@ $fm_select_arrow_h: 6px;
         position: absolute;
         right: 0;
         top: 0;
-
-        // maybe need add width and max-width
-        max-width: 25px;
-        width: 20%;
+        width: #{$fm_input_padding_horizontal * 2};
         pointer-events: none;
+        border-radius: 0 $fm_radius $fm_radius 0;
         content: '';
         bottom: 0;
         z-index: 1;
         background-color: $fm_input_bg;
-        border-radius: 6px;
-
-        // Need fixs
-        margin: 2px;
+        margin: $fm_input_border_w;
     }
 }
 
 .fm-select {
     border-radius: $fm_radius;
-    padding: $fm_select_padding_vertical #{$fm_select_padding_horizontal * 2} $fm_select_padding_vertical $fm_select_padding_horizontal;
+    padding: $fm_input_padding_vertical #{$fm_input_padding_horizontal * 2} $fm_input_padding_vertical $fm_input_padding_horizontal;
     box-shadow: none;
     border: 0;
     outline: none;
@@ -58,7 +53,8 @@ $fm_select_arrow_h: 6px;
     display: block;
     width: 100%;
     font-size: $fm_font_size;
-    line-height: $fm_font_line_h;
+    line-height: normal;
+    height: $fm_input_height;
 
     // Hide arrow select arrow
     -webkit-appearance: none;
