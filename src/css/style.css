@@ -6,6 +6,17 @@ body {
   line-height: 1.2;
 }
 
+.logo {
+  position: relative;
+}
+.logo .beta {
+  font-size: 45%;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  opacity: 0.67;
+  vertical-align: top;
+}
+
 *:after, *:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -68,6 +79,7 @@ body {
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  pointer-events: none;
 }
 
 textarea.fm-input + .fm-placeholder {

@@ -6,3 +6,14 @@ body {
     font-size: 16px;
     line-height: 1.2;
 }
+
+.logo {
+  position: relative;
+  .beta {
+    font-size: 45%;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    opacity: 0.67;
+    vertical-align: top;
+  }
+}
