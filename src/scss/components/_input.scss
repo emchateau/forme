@@ -12,7 +12,7 @@
     @include box-sizing(border-box);
 
     background-color: $fm_input_bg;
-
+    
     &:invalid {
         border-color: #c0392b;
     }
@@ -27,6 +27,8 @@
             font-size: 80%;
         }
     }
+
+    // Errors
     &.fm-warning {
         border-color: $fm_color_warning;
     }
@@ -37,6 +39,17 @@
 
     &.fm-valid {
         border-color: $fm_color_ok;
+    }
+
+    // Disabled
+    &[disabled] {
+        background-color: $fm_input_disabled_bg;
+        cursor: not-allowed;
+        border-color: $fm_input_disabled_border_color;
+        
+        & + .fm-placeholder {
+            opacity: 0.5;
+        }
     }
 }
 

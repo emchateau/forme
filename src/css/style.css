@@ -17,6 +17,11 @@ body {
   vertical-align: top;
 }
 
+hr {
+  border-bottom: 0;
+  border-top: 1px solid #e6e9ea;
+}
+
 *:after, *:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -65,6 +70,14 @@ body {
 .fm-input.fm-valid {
   border-color: #27ae60;
 }
+.fm-input[disabled] {
+  background-color: #eaeded;
+  cursor: not-allowed;
+  border-color: #cbd0d3;
+}
+.fm-input[disabled] + .fm-placeholder {
+  opacity: 0.5;
+}
 
 .fm-placeholder {
   position: absolute;
@@ -91,6 +104,7 @@ textarea.fm-input + .fm-placeholder {
   position: relative;
   display: inline-block;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .fm-radio {
@@ -103,6 +117,16 @@ textarea.fm-input + .fm-placeholder {
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+.fm-radio[disabled] + .fm-placeholder-radio {
+  cursor: not-allowed;
+}
+.fm-radio[disabled] + .fm-placeholder-radio:before {
+  background-color: #cbd0d3;
+}
+.fm-radio[disabled] + .fm-placeholder-radio:after {
+  background-color: #eaeded;
+  border-color: #cbd0d3;
 }
 
 .fm-placeholder-radio {
@@ -157,6 +181,16 @@ textarea.fm-input + .fm-placeholder {
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+.fm-checkbox[disabled] + .fm-placeholder-checkbox {
+  cursor: not-allowed;
+}
+.fm-checkbox[disabled] + .fm-placeholder-checkbox:before {
+  background-color: #cbd0d3;
+}
+.fm-checkbox[disabled] + .fm-placeholder-checkbox:after {
+  background-color: #eaeded;
+  border-color: #cbd0d3;
 }
 
 .fm-placeholder-checkbox {
@@ -295,6 +329,16 @@ select::-ms-expand {
 }
 .fm-switcher:checked + .fm-placeholder-switcher:before {
   left: 24px;
+}
+.fm-switcher[disabled] + .fm-placeholder-switcher {
+  cursor: not-allowed;
+}
+.fm-switcher[disabled] + .fm-placeholder-switcher:before {
+  background-color: #cbd0d3;
+}
+.fm-switcher[disabled] + .fm-placeholder-switcher:after {
+  background-color: #eaeded;
+  border-color: #cbd0d3;
 }
 
 .fm-placeholder-switcher {

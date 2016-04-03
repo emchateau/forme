@@ -20,6 +20,21 @@ $fm_switcher_border_w: $fm_input_border_w;
             }
         }
     }
+
+    // Disabled
+    &[disabled] {
+        & + .fm-placeholder-switcher {
+            cursor: not-allowed;
+
+            &:before {
+                background-color: $fm_input_disabled_border_color;
+            }
+            &:after {
+                background-color: $fm_input_disabled_bg;
+                border-color: $fm_input_disabled_border_color;
+            }
+        }
+    }
 }
 
 .fm-placeholder-switcher {

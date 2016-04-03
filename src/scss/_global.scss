@@ -17,3 +17,8 @@ body {
     vertical-align: top;
   }
 }
+
+hr {
+  border-bottom: 0;
+  border-top: 1px solid lighten($fm_border_color, 15%);
+}

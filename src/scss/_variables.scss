@@ -17,6 +17,8 @@ $fm_input_border_w: 2px;
 $fm_active_color: #2980b9;
 $fm_border_color: #bdc3c7;
 $fm_input_bg: #ffffff;
+$fm_input_disabled_bg: #eaeded;
+$fm_input_disabled_border_color: lighten($fm_border_color, 5%);
 $fm_btn_color: #ffffff;
 
  $fm_font_size: 14px;
