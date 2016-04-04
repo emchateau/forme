@@ -45,7 +45,7 @@ $fm_select_arrow_h: 6px;
 
 .fm-select {
     border-radius: $fm_radius;
-    padding: $fm_input_padding_vertical #{$fm_input_padding_horizontal * 2} $fm_input_padding_vertical $fm_input_padding_horizontal;
+    padding: #{$fm_input_padding_vertical - 2px} #{$fm_input_padding_horizontal * 2} #{$fm_input_padding_vertical - 2px} $fm_input_padding_horizontal;
     box-shadow: none;
     border: 0;
     outline: none;
@@ -61,6 +61,8 @@ $fm_select_arrow_h: 6px;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+
+    @include box-sizing(border-box);
 }
 
 // Hide arrow select arrow IE 10

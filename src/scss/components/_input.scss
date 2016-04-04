@@ -9,11 +9,11 @@
     width: 100%;
     font-size: $fm_font_size;
     line-height: $fm_font_line_h;
-    
+
     @include box-sizing(border-box);
 
     background-color: $fm_input_bg;
-    
+
     &:invalid {
         border-color: #c0392b;
     }
@@ -48,7 +48,7 @@
         background-color: $fm_input_disabled_bg;
         cursor: not-allowed;
         border-color: $fm_input_disabled_border_color;
-        
+
         & + .fm-placeholder {
             opacity: 0.5;
         }

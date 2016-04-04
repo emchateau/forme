@@ -4,6 +4,8 @@ body {
   color: #2c3e50;
   font-size: 16px;
   line-height: 1.2;
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
@@ -286,7 +288,7 @@ textarea.fm-input + .fm-placeholder {
 
 .fm-select {
   border-radius: 6px;
-  padding: 10px 30px 10px 15px;
+  padding: 8px 30px 8px 15px;
   box-shadow: none;
   border: 0;
   outline: none;
@@ -300,6 +302,9 @@ textarea.fm-input + .fm-placeholder {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: '';
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 select::-ms-expand {
@@ -309,7 +314,7 @@ select::-ms-expand {
 .fm-button {
   border: 0;
   background-color: #2980b9;
-  padding: 10px 15px;
+  padding: 8px 15px;
   box-shadow: none;
   display: inline-block;
   color: #ffffff;
@@ -354,6 +359,38 @@ select::-ms-expand {
 
 input.fm-button[type="submit"] {
   height: 40px;
+}
+
+.fm-msg {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  left: 0;
+  top: 100%;
+  line-height: 18px;
+  margin: 0 15px;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 80%;
+}
+
+.fm-input:focus ~ .fm-msg {
+  opacity: 1;
+  visibility: visible;
+}
+.fm-input.fm-warning ~ .fm-msg {
+  color: #c0392b;
+}
+.fm-input.fm-invalid ~ .fm-msg {
+  color: #c0392b;
+}
+.fm-input.fm-valid ~ .fm-msg {
+  color: #27ae60;
 }
 
 .fm-switcher {
@@ -468,6 +505,11 @@ input.fm-button[type="submit"] {
 .fm-container {
   width: 320px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .fm-full-width {
