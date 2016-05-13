@@ -14,7 +14,7 @@
 
     border: $fm_input_border_w solid $fm_active_color;
     font-size: $fm_font_size;
-    line-height: normal;
+    line-height: $fm_line_height;
 
     @include box-sizing(border-box);
 
