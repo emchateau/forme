@@ -11,10 +11,17 @@
   </head>
   <body>
     <div class='fm-container'>
-      <h1>
+      <h1 class='logo'>
         ForMe
+        <span class='beta'>
+          alpha
+        </span>
       </h1>
+      <p>
+        minimal css form framework
+      </p>
       <form class='fm-form'>
+        <h3>Inputs</h3>
         <div class='fm-form-row'>
           <div class='fm-form-control fm-ico-wrap'>
             <input class='fm-input' type='text'>
@@ -26,12 +33,41 @@
             </span>
           </div>
         </div>
+        <!-- Errors -->
+        <div class='fm-form-row'>
+          <div class='fm-form-control fm-ico-wrap'>
+            <input class='fm-input fm-invalid' type='text'>
+            <span class='fm-placeholder'>
+              Placeholder
+            </span>
+          </div>
+        </div>
+        <div class='fm-form-row'>
+          <div class='fm-form-control fm-ico-wrap'>
+            <input class='fm-input fm-valid' type='text'>
+            <span class='fm-placeholder'>
+              Placeholder
+            </span>
+          </div>
+        </div>
         <div class='fm-form-row'>
           <div class='fm-form-control'>
             <input class='fm-input' type='text'>
             <span class='fm-placeholder'>
               Placeholder
             </span>
+          </div>
+        </div>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <div class='fm-select-wrap'>
+              <select class='fm-select'>
+                <option value='option1'>Option 1</option>
+                <option value='option2'>Option 2</option>
+                <option value='option3'>Option 3</option>
+                <option value='option4'>Option 4</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class='fm-form-row'>
@@ -56,12 +92,41 @@
         <div class='fm-form-row'>
           <div class='fm-form-control'>
             <input class='fm-button' type='submit' value='Submit'>
+            <input class='fm-button fm-button-outline' type='submit' value='Submit'>
+            <input class='fm-button fm-button-clean' type='submit' value='Submit'>
+          </div>
+        </div>
+        <hr>
+        <h3>Disabled</h3>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <input class='fm-input' disabled='disabled' type='text'>
+            <span class='fm-placeholder'>
+              Placeholder
+            </span>
           </div>
         </div>
         <div class='fm-form-row'>
           <div class='fm-form-control'>
+            <textarea class='fm-input' cols='30' disabled='disabled' name='' rows='4'></textarea>
+            <span class='fm-placeholder'>
+              Placeholder
+            </span>
+          </div>
+        </div>
+        <h3>
+          Checkbox and Radio
+        </h3>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
             <input class='fm-checkbox' id='checbox_id' type='checkbox'>
             <label class='fm-placeholder-checkbox' for='checbox_id'>
+              Checkbox
+            </label>
+          </div>
+          <div class='fm-form-control'>
+            <input class='fm-checkbox' disabled='disabled' id='checbox_id2' type='checkbox'>
+            <label class='fm-placeholder-checkbox' for='checbox_id2'>
               Checkbox
             </label>
           </div>
@@ -86,20 +151,17 @@
                 Radio 3
               </label>
             </div>
-          </div>
-        </div>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <div class='fm-select-wrap'>
-              <select class='fm-select'>
-                <option value='option1'>Option 1</option>
-                <option value='option2'>Option 2</option>
-                <option value='option3'>Option 3</option>
-                <option value='option4'>Option 4</option>
-              </select>
+            <div class='fm-radio-wrap'>
+              <input checked='checked' class='fm-radio' disabled='disabled' id='fm_radio4' name='fm_radio' type='radio' value='radio3'>
+              <label class='fm-placeholder-radio' for='fm_radio4'>
+                Radio 3
+              </label>
             </div>
           </div>
         </div>
+        <h3>
+          Switcher
+        </h3>
         <div class='fm-form-row'>
           <div class='fm-form-control'>
             <input class='fm-switcher' id='switcher_id' type='checkbox'>
@@ -107,11 +169,21 @@
               Switcher
             </label>
           </div>
+          <div class='fm-form-control'>
+            <input class='fm-switcher' disabled='disabled' id='switcher_id2' type='checkbox'>
+            <label class='fm-placeholder-switcher' for='switcher_id2'>
+              Switcher
+            </label>
+          </div>
         </div>
-        <div class='fm-form-row'></div>
-        <div class='fm-form-control'>
-          <div class='fm-progress-bar'>
-            <div class='fm-progress-bar-line' style='width:70%'></div>
+        <h3>
+          Progress bar
+        </h3>
+        <div class='fm-form-row'>
+          <div class='fm-form-control'>
+            <div class='fm-progress-bar'>
+              <div class='fm-progress-bar-line' style='width:70%'></div>
+            </div>
           </div>
         </div>
       </form>
