@@ -41,7 +41,7 @@ $fm_radio_border_w: $fm_input_border_w;
 }
 
 .fm-placeholder-radio {
-    padding-left: #{$fm_radio_h * 1.5};
+    padding-left: ceil($fm_radio_h * 1.5);
     cursor: pointer;
     display: inline-block;
 
@@ -53,15 +53,15 @@ $fm_radio_border_w: $fm_input_border_w;
         top: 50%;
         width: #{$fm_radio_circle_active_h};
         height: #{$fm_radio_circle_active_h};
-        margin-top: #{-1 * $fm_radio_circle_active_h / 2};
-        margin-left: #{($fm_radio_h - $fm_radio_circle_active_h) / 2};
+        margin-top: ceil(-1 * $fm_radio_circle_active_h / 2);
+        margin-left: ceil(($fm_radio_h - $fm_radio_circle_active_h) / 2);
         border-radius: #{$fm_radius / 2};
         border-radius: 50%;
         background-color: $fm_active_color;
 
         @include transform(scale(0));
 
-        @include transition(all 0.2s ease-in-out);
+        @include transition(all #{$fm_anim_time}s ease-in-out);
 
         z-index: 2;
     }
@@ -74,9 +74,9 @@ $fm_radio_border_w: $fm_input_border_w;
         top: 50%;
         width: #{$fm_radio_h};
         height: #{$fm_radio_h};
-        margin-top: #{-1 * $fm_radio_h / 2};
+        margin-top: ceil(-1 * $fm_radio_h / 2);
         border: $fm_radio_border_w solid $fm_border_color;
-        border-radius: #{$fm_radius / 2};
+        border-radius: ceil($fm_radius / 2);
         border-radius: 50%;
         z-index: 1;
         background-color: $fm_input_bg;

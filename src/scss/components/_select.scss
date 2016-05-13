@@ -23,9 +23,9 @@ $fm_select_arrow_h: 6px;
         border-style: solid;
         border-width: $fm_select_arrow_h $fm_select_arrow_h 0 $fm_select_arrow_h;
         border-color: $fm_active_color transparent transparent transparent;
-        margin: #{-1 * $fm_select_arrow_h / 2} #{$fm_input_padding_horizontal};
+        margin: ceil(-1 * $fm_select_arrow_h / 2) #{$fm_input_padding_horizontal};
 
-        @include transition(all 0.2s ease-in-out);
+        @include transition(all #{$fm_anim_time}s ease-in-out);
     }
 
     &:after {
@@ -45,7 +45,7 @@ $fm_select_arrow_h: 6px;
 
 .fm-select {
     border-radius: $fm_radius;
-    padding: $fm_input_padding_vertical #{$fm_input_padding_horizontal * 2} $fm_input_padding_vertical $fm_input_padding_horizontal;
+    padding: #{$fm_input_padding_vertical - 2px} #{$fm_input_padding_horizontal * 2} #{$fm_input_padding_vertical - 2px} $fm_input_padding_horizontal;
     box-shadow: none;
     border: 0;
     outline: none;

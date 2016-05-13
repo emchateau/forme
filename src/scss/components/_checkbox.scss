@@ -56,7 +56,7 @@ $fm_checkbox_border_w: $fm_input_border_w;
 
     //     @include transform(scale(0));
 
-    //     @include transition(all 0.2s ease-in-out);
+    //     @include transition(all #{$fm_anim_time}s ease-in-out);
     // }
 
     //  CSS checkmark
@@ -81,7 +81,7 @@ $fm_checkbox_border_w: $fm_input_border_w;
 
         @include transform(scale(0) rotate(45deg));
 
-        @include transition(all 0.2s ease-in-out);
+        @include transition(all #{$fm_anim_time}s ease-in-out);
     }
 
     &:after {
