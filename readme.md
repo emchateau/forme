@@ -8,9 +8,9 @@ Forme - minimalist CSS forms framework, only size 11kb(not minified). Builded wi
 ###Included###
 * Input, textarea.
 * Select.
-* Switcher;
+* Switcher.
 * Radio, checkbox.
-* Disabled states;
+* Disabled states.
 * Buttons.
 
 
