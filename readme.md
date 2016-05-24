@@ -1,13 +1,17 @@
-Forme - minimalist CSS forms framework, only size 11kb. Builded with SCSS and HAML.
+Forme - minimalist CSS forms framework, only size 11kb(not minified). Builded with SCSS and HAML.
 [Demo ](http://marko-zub.github.io/forme)
 
-Included
-* input, textarea;
-* select;
-* switcher;
-* radio, checkbox;
-* disabled states;
-* buttons.
+###Why use Forme?###
+* Easy customize (change only variable.scss).
+* Minimal.
+
+###Included###
+* Input, textarea.
+* Select.
+* Switcher;
+* Radio, checkbox.
+* Disabled states;
+* Buttons.
 
 
 Used [FireApp](https://github.com/KKBOX/FireApp/releases) for build.
