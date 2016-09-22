@@ -1,0 +1,21 @@
+%h3#radio
+  Radio
+.fm-form-row
+  .fm-form-control
+    .fm-radio-wrap
+      %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio1", :type => "radio", :value => "radio1"}/
+      %label.fm-placeholder-radio{"for"=>"fm_radio1"}
+        Radio 1
+    .fm-radio-wrap
+      %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio2", :type => "radio", :value => "radio2"}/
+      %label.fm-placeholder-radio{"for"=>"fm_radio2"}
+        Radio 2
+    .fm-radio-wrap
+      %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio3", :type => "radio", :value => "radio3"}/
+      %label.fm-placeholder-radio{"for"=>"fm_radio3"}
+        Radio 3
+
+    .fm-radio-wrap
+      %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio4", :type => "radio", :value => "radio3", :disabled => "disabled"}/
+      %label.fm-placeholder-radio{"for"=>"fm_radio4"}
+        Radio 3
