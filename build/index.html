@@ -20,8 +20,59 @@
       <p>
         minimal css form framework
       </p>
+      <div class='header-nav-secondary'>
+        <a href='https://github.com/marko-zub/forme'>
+          <i class='ion-social-github'></i>
+        </a>
+      </div>
+      <h3>Components</h3>
+      <ul class='nav'>
+        <li>
+          <a href='#input'>
+            Input
+          </a>
+        </li>
+        <li>
+          <a href='#select'>
+            Select
+          </a>
+        </li>
+        <li>
+          <a href='#textarea'>
+            Textarea
+          </a>
+        </li>
+        <li>
+          <a href='#buttons'>
+            Buttons
+          </a>
+        </li>
+        <li>
+          <a href='#checkbox'>
+            Checkbox
+          </a>
+        </li>
+        <li>
+          <a href='#radio'>
+            Radio
+          </a>
+        </li>
+        <li>
+          <a href='#switcher'>
+            Switcher
+          </a>
+        </li>
+        <li>
+          <a href='#progressbar'>
+            Progressbar
+          </a>
+        </li>
+      </ul>
       <form class='fm-form'>
-        <h3>Inputs</h3>
+        <hr>
+        <h3 id='input'>
+          Inputs
+        </h3>
         <div class='fm-form-row'>
           <div class='fm-form-control fm-ico-wrap'>
             <input class='fm-input' type='text'>
@@ -58,6 +109,10 @@
             </span>
           </div>
         </div>
+        <hr>
+        <h3 id='select'>
+          Select
+        </h3>
         <div class='fm-form-row'>
           <div class='fm-form-control'>
             <div class='fm-select-wrap'>
@@ -70,6 +125,10 @@
             </div>
           </div>
         </div>
+        <hr>
+        <h3 id='textarea'>
+          Textarea
+        </h3>
         <div class='fm-form-row'>
           <div class='fm-form-control'>
             <textarea class='fm-input' cols='30' name='' rows='4'></textarea>
@@ -89,6 +148,10 @@
             </span>
           </div>
         </div>
+        <hr>
+        <h3 id='buttons'>
+          Buttons
+        </h3>
         <div class='fm-form-row'>
           <div class='fm-form-control'>
             <input class='fm-button' type='submit' value='Submit'>
@@ -97,25 +160,10 @@
           </div>
         </div>
         <hr>
-        <h3>Disabled</h3>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <input class='fm-input' disabled='disabled' type='text'>
-            <span class='fm-placeholder'>
-              Placeholder
-            </span>
-          </div>
-        </div>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <textarea class='fm-input' cols='30' disabled='disabled' name='' rows='4'></textarea>
-            <span class='fm-placeholder'>
-              Placeholder
-            </span>
-          </div>
-        </div>
-        <h3>
-          Checkbox and Radio
+        <!-- = render :partial => 'components/disabled.haml' -->
+        <!-- hr/ -->
+        <h3 id='checkbox'>
+          Checkbox
         </h3>
         <div class='fm-form-row'>
           <div class='fm-form-control'>
@@ -131,6 +179,10 @@
             </label>
           </div>
         </div>
+        <hr>
+        <h3 id='radio'>
+          Radio
+        </h3>
         <div class='fm-form-row'>
           <div class='fm-form-control'>
             <div class='fm-radio-wrap'>
@@ -159,7 +211,8 @@
             </div>
           </div>
         </div>
-        <h3>
+        <hr>
+        <h3 id='switcher'>
           Switcher
         </h3>
         <div class='fm-form-row'>
@@ -176,7 +229,8 @@
             </label>
           </div>
         </div>
-        <h3>
+        <hr>
+        <h3 id='progressbar'>
           Progress bar
         </h3>
         <div class='fm-form-row'>
@@ -186,6 +240,7 @@
             </div>
           </div>
         </div>
+        <hr>
       </form>
     </div>
   </body>

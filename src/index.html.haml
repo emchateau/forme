@@ -18,8 +18,11 @@
       %p
         minimal css form framework
 
+      .header-nav-secondary
+        %a{:href => "https://github.com/marko-zub/forme"}
+          %i.ion-social-github
       %h3 Components
-      %ul
+      %ul.nav
         %li
           %a{:href => "#input"}
             Input
@@ -47,12 +50,22 @@
 
 
       %form.fm-form
+        %hr/
         = render :partial => 'components/input.haml'
+        %hr/
         = render :partial => 'components/select.haml'
+        %hr/
         = render :partial => 'components/textarea.haml'
+        %hr/
         = render :partial => 'components/buttons.haml'
+        %hr/
         / = render :partial => 'components/disabled.haml'
+        /hr/
         = render :partial => 'components/checkbox.haml'
+        %hr/
         = render :partial => 'components/radio.haml'
+        %hr/
         = render :partial => 'components/switcher.haml'
+        %hr/
         = render :partial => 'components/progressbar.haml'
+        %hr/

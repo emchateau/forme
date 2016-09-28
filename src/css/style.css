@@ -22,6 +22,37 @@ hr {
   border-top: 1px solid #e6e9ea;
 }
 
+a {
+  color: #2980b9;
+  text-decoration: none;
+  -moz-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+a:hover {
+  color: #000;
+}
+
+.header-nav-secondary {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 20px 30px;
+  z-index: 111;
+}
+.header-nav-secondary i {
+  font-size: 32px;
+}
+
+.nav {
+  padding: 0 0 0 20px;
+  margin: 0 0 20px;
+}
+.nav li {
+  margin: 4px 0 5px;
+}
+
 *:after, *:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
