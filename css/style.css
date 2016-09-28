@@ -22,6 +22,37 @@ hr {
   border-top: 1px solid #e6e9ea;
 }
 
+a {
+  color: #2980b9;
+  text-decoration: none;
+  -moz-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+a:hover {
+  color: #000;
+}
+
+.header-nav-secondary {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 20px 30px;
+  z-index: 111;
+}
+.header-nav-secondary i {
+  font-size: 32px;
+}
+
+.nav {
+  padding: 0 0 0 20px;
+  margin: 0 0 20px;
+}
+.nav li {
+  margin: 4px 0 5px;
+}
+
 *:after, *:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -155,10 +186,10 @@ textarea.fm-input + .fm-placeholder {
   -ms-transform: scale(0);
   -webkit-transform: scale(0);
   transform: scale(0);
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   z-index: 2;
 }
 .fm-placeholder-radio:after {
@@ -223,10 +254,10 @@ textarea.fm-input + .fm-placeholder {
   -ms-transform: scale(0) rotate(45deg);
   -webkit-transform: scale(0) rotate(45deg);
   transform: scale(0) rotate(45deg);
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .fm-placeholder-checkbox:after {
   position: absolute;
@@ -265,10 +296,10 @@ textarea.fm-input + .fm-placeholder {
   border-width: 6px 6px 0 6px;
   border-color: #2980b9 transparent transparent transparent;
   margin: -3px 15px;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .fm-select-wrap:after {
   position: absolute;
@@ -286,7 +317,7 @@ textarea.fm-input + .fm-placeholder {
 
 .fm-select {
   border-radius: 6px;
-  padding: 10px 30px 10px 15px;
+  padding: 8px 30px 8px 15px;
   box-shadow: none;
   border: 0;
   outline: none;
@@ -392,10 +423,10 @@ input.fm-button[type="submit"] {
   margin-left: 2px;
   background-color: #2980b9;
   z-index: 2;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   border-radius: 12px;
 }
 .fm-placeholder-switcher:after {
@@ -410,10 +441,10 @@ input.fm-button[type="submit"] {
   z-index: 1;
   border-radius: 12px;
   border: 2px solid #bdc3c7;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .fm-progress-bar {
