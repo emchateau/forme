@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 
   %body
-    .fm-container
+    .container
       %h1.logo
         ForMe
         %span.beta
@@ -48,7 +48,7 @@
           %a{:href => "#progressbar"}
             Progressbar
 
-
+      -# .fm-container
       %form.fm-form
         %hr/
         = render :partial => 'components/input.haml'
@@ -69,3 +69,5 @@
         %hr/
         = render :partial => 'components/progressbar.haml'
         %hr/
+
+    = render :partial => 'scripts.haml'

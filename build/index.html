@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class='fm-container'>
+    <div class='container'>
       <h1 class='logo'>
         ForMe
         <span class='beta'>
@@ -70,115 +70,128 @@
       </ul>
       <form class='fm-form'>
         <hr>
-        <h3 id='input'>
-          Inputs
-        </h3>
-        <div class='fm-form-row'>
-          <div class='fm-form-control fm-ico-wrap'>
-            <input class='fm-input' type='text'>
-            <span class='fm-placeholder'>
-              Placeholder
-            </span>
-            <span class='fm-ico'>
-              <i class='ion-android-person'></i>
-            </span>
+        <div class='fm-container'>
+          <h3 id='input'>
+            Inputs
+          </h3>
+          <div class='fm-form-row'>
+            <div class='fm-form-control fm-ico-wrap'>
+              <input class='fm-input' type='text'>
+              <span class='fm-placeholder'>
+                Placeholder
+              </span>
+              <span class='fm-ico'>
+                <i class='ion-android-person'></i>
+              </span>
+            </div>
+          </div>
+          <!-- Errors -->
+          <div class='fm-form-row'>
+            <div class='fm-form-control fm-ico-wrap'>
+              <input class='fm-input fm-invalid' type='text'>
+              <span class='fm-placeholder'>
+                Placeholder
+              </span>
+            </div>
+          </div>
+          <div class='fm-form-row'>
+            <div class='fm-form-control fm-ico-wrap'>
+              <input class='fm-input fm-valid' type='text'>
+              <span class='fm-placeholder'>
+                Placeholder
+              </span>
+            </div>
+          </div>
+          <div class='fm-form-row'>
+            <div class='fm-form-control'>
+              <input class='fm-input' type='text'>
+              <span class='fm-placeholder'>
+                Placeholder
+              </span>
+            </div>
           </div>
         </div>
-        <!-- Errors -->
-        <div class='fm-form-row'>
-          <div class='fm-form-control fm-ico-wrap'>
-            <input class='fm-input fm-invalid' type='text'>
-            <span class='fm-placeholder'>
-              Placeholder
-            </span>
-          </div>
-        </div>
-        <div class='fm-form-row'>
-          <div class='fm-form-control fm-ico-wrap'>
-            <input class='fm-input fm-valid' type='text'>
-            <span class='fm-placeholder'>
-              Placeholder
-            </span>
-          </div>
-        </div>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <input class='fm-input' type='text'>
-            <span class='fm-placeholder'>
-              Placeholder
-            </span>
-          </div>
-        </div>
+        <pre><code class='language-html'>&lt;div class='fm-form-control'&gt;&#x000A;  &lt;input class='fm-input' type='text'&gt;&#x000A;  &lt;span class='fm-placeholder'&gt;&#x000A;    Placeholder&#x000A;  &lt;/span&gt;&#x000A;&lt;/div&gt;</code></pre>
         <hr>
         <h3 id='select'>
           Select
         </h3>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <div class='fm-select-wrap'>
-              <select class='fm-select'>
-                <option value='option1'>Option 1</option>
-                <option value='option2'>Option 2</option>
-                <option value='option3'>Option 3</option>
-                <option value='option4'>Option 4</option>
-              </select>
+        <div class='fm-container'>
+          <div class='fm-form-row'>
+            <div class='fm-form-control'>
+              <div class='fm-select-wrap'>
+                <select class='fm-select'>
+                  <option value='option1'>Option 1</option>
+                  <option value='option2'>Option 2</option>
+                  <option value='option3'>Option 3</option>
+                  <option value='option4'>Option 4</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
+        <pre><code class='language-html'>&lt;div class='fm-form-control'&gt;&#x000A;  &lt;div class='fm-select-wrap'&gt;&#x000A;    &lt;select class='fm-select'&gt;&#x000A;      &lt;option value='option1'&gt;Option 1&lt;/option&gt;&#x000A;      &lt;option value='option2'&gt;Option 2&lt;/option&gt;&#x000A;      &lt;option value='option3'&gt;Option 3&lt;/option&gt;&#x000A;      &lt;option value='option4'&gt;Option 4&lt;/option&gt;&#x000A;    &lt;/select&gt;&#x000A;  &lt;/div&gt;&#x000A;&lt;/div&gt;</code></pre>
         <hr>
         <h3 id='textarea'>
           Textarea
         </h3>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <textarea class='fm-input' cols='30' name='' rows='4'></textarea>
-            <span class='fm-placeholder'>
-              Placeholder
-            </span>
+        <div class='fm-container'>
+          <div class='fm-form-row'>
+            <div class='fm-form-control'>
+              <textarea class='fm-input' cols='30' name='' rows='4'></textarea>
+              <span class='fm-placeholder'>
+                Placeholder
+              </span>
+            </div>
+          </div>
+          <div class='fm-form-row fm-ico-wrap'>
+            <div class='fm-form-control'>
+              <textarea class='fm-input' cols='30' name='' rows='4'></textarea>
+              <span class='fm-placeholder'>
+                Placeholder
+              </span>
+              <span class='fm-ico'>
+                <i class='ion-android-mail'></i>
+              </span>
+            </div>
           </div>
         </div>
-        <div class='fm-form-row fm-ico-wrap'>
-          <div class='fm-form-control'>
-            <textarea class='fm-input' cols='30' name='' rows='4'></textarea>
-            <span class='fm-placeholder'>
-              Placeholder
-            </span>
-            <span class='fm-ico'>
-              <i class='ion-android-mail'></i>
-            </span>
-          </div>
-        </div>
+        <pre><code class='language-html'>&lt;div class='fm-form-control'&gt;&#x000A;  &lt;textarea class='fm-input' cols='30' name='' rows='4'&gt;&lt;/textarea&gt;&#x000A;  &lt;span class='fm-placeholder'&gt;&#x000A;    Placeholder&#x000A;  &lt;/span&gt;&#x000A;&lt;/div&gt;</code></pre>
         <hr>
-        <h3 id='buttons'>
-          Buttons
-        </h3>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
+        <div class='fm-container'>
+          <h3 id='buttons'>
+            Buttons
+          </h3>
+          <div class='fm-form-row'>
             <input class='fm-button' type='submit' value='Submit'>
             <input class='fm-button fm-button-outline' type='submit' value='Submit'>
             <input class='fm-button fm-button-clean' type='submit' value='Submit'>
           </div>
         </div>
+        <pre><code class='language-html'>&lt;input class='fm-button' type='submit' value='Submit'&gt;&#x000A;&lt;input class='fm-button fm-button-outline' type='submit' value='Submit'&gt;&#x000A;&lt;input class='fm-button fm-button-clean' type='submit' value='Submit'&gt;</code></pre>
         <hr>
         <!-- = render :partial => 'components/disabled.haml' -->
         <!-- hr/ -->
         <h3 id='checkbox'>
           Checkbox
         </h3>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <input class='fm-checkbox' id='checbox_id' type='checkbox'>
-            <label class='fm-placeholder-checkbox' for='checbox_id'>
-              Checkbox
-            </label>
-          </div>
-          <div class='fm-form-control'>
-            <input class='fm-checkbox' disabled='disabled' id='checbox_id2' type='checkbox'>
-            <label class='fm-placeholder-checkbox' for='checbox_id2'>
-              Checkbox
-            </label>
+        <div class='fm-container'>
+          <div class='fm-form-row'>
+            <div class='fm-form-control'>
+              <input class='fm-checkbox' id='checbox_id' type='checkbox'>
+              <label class='fm-placeholder-checkbox' for='checbox_id'>
+                Checkbox
+              </label>
+            </div>
+            <div class='fm-form-control'>
+              <input class='fm-checkbox' disabled='disabled' id='checbox_id2' type='checkbox'>
+              <label class='fm-placeholder-checkbox' for='checbox_id2'>
+                Checkbox
+              </label>
+            </div>
           </div>
         </div>
+        <pre><code class='language-html'>&lt;div class='fm-form-control'&gt;&#x000A;  &lt;input class='fm-checkbox' id='checbox_id' type='checkbox'&gt;&#x000A;  &lt;label class='fm-placeholder-checkbox' for='checbox_id'&gt;&#x000A;    Checkbox&#x000A;  &lt;/label&gt;&#x000A;&lt;/div&gt;&#x000A;&lt;div class='fm-form-control'&gt;&#x000A;  &lt;input class='fm-checkbox' disabled='disabled' id='checbox_id2' type='checkbox'&gt;&#x000A;  &lt;label class='fm-placeholder-checkbox' for='checbox_id2'&gt;&#x000A;    Checkbox&#x000A;  &lt;/label&gt;&#x000A;&lt;/div&gt;</code></pre>
         <hr>
         <h3 id='radio'>
           Radio
@@ -204,44 +217,53 @@
               </label>
             </div>
             <div class='fm-radio-wrap'>
-              <input checked='checked' class='fm-radio' disabled='disabled' id='fm_radio4' name='fm_radio' type='radio' value='radio3'>
+              <input checked='checked' class='fm-radio' disabled='disabled' id='fm_radio4' name='fm_radio' type='radio' value='radio4'>
               <label class='fm-placeholder-radio' for='fm_radio4'>
-                Radio 3
+                Radio 4
               </label>
             </div>
           </div>
         </div>
+        <pre><code class='language-html'>&lt;div class='fm-radio-wrap'&gt;&#x000A;  &lt;input checked='checked' class='fm-radio' id='fm_radio1' name='fm_radio' type='radio' value='radio1'&gt;&#x000A;  &lt;label class='fm-placeholder-radio' for='fm_radio1'&gt;&#x000A;    Radio 1&#x000A;  &lt;/label&gt;&#x000A;&lt;/div&gt;&#x000A;&lt;div class='fm-radio-wrap'&gt;&#x000A;  &lt;input checked='checked' class='fm-radio' id='fm_radio2' name='fm_radio' type='radio' value='radio2'&gt;&#x000A;  &lt;label class='fm-placeholder-radio' for='fm_radio2'&gt;&#x000A;    Radio 2&#x000A;  &lt;/label&gt;&#x000A;&lt;/div&gt;&#x000A;&lt;div class='fm-radio-wrap'&gt;&#x000A;  &lt;input checked='checked' class='fm-radio' id='fm_radio3' name='fm_radio' type='radio' value='radio3'&gt;&#x000A;  &lt;label class='fm-placeholder-radio' for='fm_radio3'&gt;&#x000A;    Radio 3&#x000A;  &lt;/label&gt;&#x000A;&lt;/div&gt;&#x000A;&lt;div class='fm-radio-wrap'&gt;&#x000A;  &lt;input checked='checked' class='fm-radio' disabled='disabled' id='fm_radio4' name='fm_radio' type='radio' value='radio4'&gt;&#x000A;  &lt;label class='fm-placeholder-radio' for='fm_radio4'&gt;&#x000A;    Radio 4&#x000A;  &lt;/label&gt;&#x000A;&lt;/div&gt;</code></pre>
         <hr>
         <h3 id='switcher'>
           Switcher
         </h3>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <input class='fm-switcher' id='switcher_id' type='checkbox'>
-            <label class='fm-placeholder-switcher' for='switcher_id'>
-              Switcher
-            </label>
-          </div>
-          <div class='fm-form-control'>
-            <input class='fm-switcher' disabled='disabled' id='switcher_id2' type='checkbox'>
-            <label class='fm-placeholder-switcher' for='switcher_id2'>
-              Switcher
-            </label>
+        <div class='fm-container'>
+          <div class='fm-form-row'>
+            <div class='fm-form-control'>
+              <input class='fm-switcher' id='switcher_id' type='checkbox'>
+              <label class='fm-placeholder-switcher' for='switcher_id'>
+                Switcher
+              </label>
+            </div>
+            <div class='fm-form-control'>
+              <input class='fm-switcher' disabled='disabled' id='switcher_id2' type='checkbox'>
+              <label class='fm-placeholder-switcher' for='switcher_id2'>
+                Switcher
+              </label>
+            </div>
           </div>
         </div>
+        <pre><code class='language-html'>&lt;div class='fm-form-control'&gt;&#x000A;  &lt;input class='fm-switcher' id='switcher_id' type='checkbox'&gt;&#x000A;  &lt;label class='fm-placeholder-switcher' for='switcher_id'&gt;&#x000A;    Switcher&#x000A;  &lt;/label&gt;&#x000A;&lt;/div&gt;&#x000A;&lt;div class='fm-form-control'&gt;&#x000A;  &lt;input class='fm-switcher' disabled='disabled' id='switcher_id2' type='checkbox'&gt;&#x000A;  &lt;label class='fm-placeholder-switcher' for='switcher_id2'&gt;&#x000A;    Switcher&#x000A;  &lt;/label&gt;&#x000A;&lt;/div&gt;</code></pre>
         <hr>
         <h3 id='progressbar'>
           Progress bar
         </h3>
-        <div class='fm-form-row'>
-          <div class='fm-form-control'>
-            <div class='fm-progress-bar'>
-              <div class='fm-progress-bar-line' style='width:70%'></div>
+        <div class='fm-container'>
+          <div class='fm-form-row'>
+            <div class='fm-form-control'>
+              <div class='fm-progress-bar'>
+                <div class='fm-progress-bar-line' style='width:70%'></div>
+              </div>
             </div>
           </div>
         </div>
+        <pre><code class='language-html'>&lt;div class='fm-form-control'&gt;&#x000A;  &lt;div class='fm-progress-bar'&gt;&#x000A;    &lt;div class='fm-progress-bar-line' style='width:70%'&gt;&lt;/div&gt;&#x000A;  &lt;/div&gt;&#x000A;&lt;/div&gt;</code></pre>
         <hr>
       </form>
     </div>
+    <script src="js/plugins/prism.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

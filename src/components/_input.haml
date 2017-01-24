@@ -1,25 +1,36 @@
-%h3#input
-  Inputs
-.fm-form-row
-  .fm-form-control.fm-ico-wrap
-    %input.fm-input{:type => "text"}/
-    %span.fm-placeholder
-      Placeholder
-    %span.fm-ico
-      %i.ion-android-person
-/ Errors
-.fm-form-row
-  .fm-form-control.fm-ico-wrap
-    %input.fm-input.fm-invalid{:type => "text"}/
-    %span.fm-placeholder
-      Placeholder
-.fm-form-row
-  .fm-form-control.fm-ico-wrap
-    %input.fm-input.fm-valid{:type => "text"}/
-    %span.fm-placeholder
-      Placeholder
-.fm-form-row
-  .fm-form-control
-    %input.fm-input{:type => "text"}/
-    %span.fm-placeholder
-      Placeholder
+.fm-container
+  %h3#input
+    Inputs
+  .fm-form-row
+    .fm-form-control.fm-ico-wrap
+      %input.fm-input{:type => "text"}/
+      %span.fm-placeholder
+        Placeholder
+      %span.fm-ico
+        %i.ion-android-person
+  / Errors
+  .fm-form-row
+    .fm-form-control.fm-ico-wrap
+      %input.fm-input.fm-invalid{:type => "text"}/
+      %span.fm-placeholder
+        Placeholder
+  .fm-form-row
+    .fm-form-control.fm-ico-wrap
+      %input.fm-input.fm-valid{:type => "text"}/
+      %span.fm-placeholder
+        Placeholder
+  .fm-form-row
+    .fm-form-control
+      %input.fm-input{:type => "text"}/
+      %span.fm-placeholder
+        Placeholder
+
+%pre
+  %code.language-html
+    :preserve
+      &lt;div class='fm-form-control'&gt;
+        &lt;input class='fm-input' type='text'&gt;
+        &lt;span class='fm-placeholder'&gt;
+          Placeholder
+        &lt;/span&gt;
+      &lt;/div&gt;

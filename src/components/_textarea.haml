@@ -1,14 +1,25 @@
 %h3#textarea
   Textarea
-.fm-form-row
-  .fm-form-control
-    %textarea.fm-input{:name => "", :cols => "30", :rows => "4"}
-    %span.fm-placeholder
-      Placeholder
-.fm-form-row.fm-ico-wrap
-  .fm-form-control
-    %textarea.fm-input{:name => "", :cols => "30", :rows => "4"}
-    %span.fm-placeholder
-      Placeholder
-    %span.fm-ico
-      %i.ion-android-mail
+.fm-container
+  .fm-form-row
+    .fm-form-control
+      %textarea.fm-input{:name => "", :cols => "30", :rows => "4"}
+      %span.fm-placeholder
+        Placeholder
+  .fm-form-row.fm-ico-wrap
+    .fm-form-control
+      %textarea.fm-input{:name => "", :cols => "30", :rows => "4"}
+      %span.fm-placeholder
+        Placeholder
+      %span.fm-ico
+        %i.ion-android-mail
+
+%pre
+  %code.language-html
+    :preserve
+      &lt;div class='fm-form-control'&gt;
+        &lt;textarea class='fm-input' cols='30' name='' rows='4'&gt;&lt;/textarea&gt;
+        &lt;span class='fm-placeholder'&gt;
+          Placeholder
+        &lt;/span&gt;
+      &lt;/div&gt;

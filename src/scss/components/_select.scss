@@ -45,7 +45,7 @@ $fm_select_arrow_h: 6px;
 
 .fm-select {
     border-radius: $fm_radius;
-    padding: #{$fm_input_padding_vertical - 2px} #{$fm_input_padding_horizontal * 2} #{$fm_input_padding_vertical - 2px} $fm_input_padding_horizontal;
+    padding: #{$fm_input_padding_vertical - 2px} #{$fm_input_padding_horizontal * 2} #{$fm_input_padding_vertical - 2px} #{$fm_input_padding_horizontal / 2};
     box-shadow: none;
     border: 0;
     outline: none;

@@ -1,10 +1,24 @@
 %h3#select
   Select
-.fm-form-row
-  .fm-form-control
-    .fm-select-wrap
-      %select.fm-select
-        %option{:value => "option1"} Option 1
-        %option{:value => "option2"} Option 2
-        %option{:value => "option3"} Option 3
-        %option{:value => "option4"} Option 4
+.fm-container
+  .fm-form-row
+    .fm-form-control
+      .fm-select-wrap
+        %select.fm-select
+          %option{:value => "option1"} Option 1
+          %option{:value => "option2"} Option 2
+          %option{:value => "option3"} Option 3
+          %option{:value => "option4"} Option 4
+%pre
+  %code.language-html
+    :preserve
+      &lt;div class='fm-form-control'&gt;
+        &lt;div class='fm-select-wrap'&gt;
+          &lt;select class='fm-select'&gt;
+            &lt;option value='option1'&gt;Option 1&lt;/option&gt;
+            &lt;option value='option2'&gt;Option 2&lt;/option&gt;
+            &lt;option value='option3'&gt;Option 3&lt;/option&gt;
+            &lt;option value='option4'&gt;Option 4&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;

@@ -1,11 +1,27 @@
 %h3#checkbox
   Checkbox
-.fm-form-row
-  .fm-form-control
-    %input.fm-checkbox{:type => "checkbox", :id => "checbox_id"}/
-    %label.fm-placeholder-checkbox{"for"=>"checbox_id"}
-      Checkbox
-  .fm-form-control
-    %input.fm-checkbox{:type => "checkbox", :id => "checbox_id2", :disabled => "disabled"}/
-    %label.fm-placeholder-checkbox{"for"=>"checbox_id2"}
-      Checkbox
+.fm-container
+  .fm-form-row
+    .fm-form-control
+      %input.fm-checkbox{:type => "checkbox", :id => "checbox_id"}/
+      %label.fm-placeholder-checkbox{"for"=>"checbox_id"}
+        Checkbox
+    .fm-form-control
+      %input.fm-checkbox{:type => "checkbox", :id => "checbox_id2", :disabled => "disabled"}/
+      %label.fm-placeholder-checkbox{"for"=>"checbox_id2"}
+        Checkbox
+%pre
+  %code.language-html
+    :preserve
+      &lt;div class='fm-form-control'&gt;
+        &lt;input class='fm-checkbox' id='checbox_id' type='checkbox'&gt;
+        &lt;label class='fm-placeholder-checkbox' for='checbox_id'&gt;
+          Checkbox
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class='fm-form-control'&gt;
+        &lt;input class='fm-checkbox' disabled='disabled' id='checbox_id2' type='checkbox'&gt;
+        &lt;label class='fm-placeholder-checkbox' for='checbox_id2'&gt;
+          Checkbox
+        &lt;/label&gt;
+      &lt;/div&gt;

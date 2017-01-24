@@ -53,3 +53,15 @@ a {
     margin: 4px 0 5px;
   }
 }
+
+
+.container {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+pre + hr {
+  margin-top: 20px;
+}

@@ -16,6 +16,34 @@
         Radio 3
 
     .fm-radio-wrap
-      %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio4", :type => "radio", :value => "radio3", :disabled => "disabled"}/
+      %input.fm-radio{:checked => "checked", :name => "fm_radio", :id => "fm_radio4", :type => "radio", :value => "radio4", :disabled => "disabled"}/
       %label.fm-placeholder-radio{"for"=>"fm_radio4"}
-        Radio 3
+        Radio 4
+
+%pre
+  %code.language-html
+    :preserve
+      &lt;div class='fm-radio-wrap'&gt;
+        &lt;input checked='checked' class='fm-radio' id='fm_radio1' name='fm_radio' type='radio' value='radio1'&gt;
+        &lt;label class='fm-placeholder-radio' for='fm_radio1'&gt;
+          Radio 1
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class='fm-radio-wrap'&gt;
+        &lt;input checked='checked' class='fm-radio' id='fm_radio2' name='fm_radio' type='radio' value='radio2'&gt;
+        &lt;label class='fm-placeholder-radio' for='fm_radio2'&gt;
+          Radio 2
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class='fm-radio-wrap'&gt;
+        &lt;input checked='checked' class='fm-radio' id='fm_radio3' name='fm_radio' type='radio' value='radio3'&gt;
+        &lt;label class='fm-placeholder-radio' for='fm_radio3'&gt;
+          Radio 3
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class='fm-radio-wrap'&gt;
+        &lt;input checked='checked' class='fm-radio' disabled='disabled' id='fm_radio4' name='fm_radio' type='radio' value='radio4'&gt;
+        &lt;label class='fm-placeholder-radio' for='fm_radio4'&gt;
+          Radio 4
+        &lt;/label&gt;
+      &lt;/div&gt;
