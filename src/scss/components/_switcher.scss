@@ -76,7 +76,7 @@ $fm_switcher_border_w: $fm_input_border_w;
         z-index: 1;
         border-radius: $switcher_radius;
         border: $fm_switcher_border_w solid $fm_border_color;
-        
+
         @include transition(all #{$fm_anim_time}s ease-in-out);
     }
 }
