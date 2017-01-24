@@ -10,76 +10,77 @@
     <link rel="stylesheet" href="css/style.css">
 
   %body
-    .container
-      %h1.logo
-        ForMe
-        %span.beta
-          alpha v0.0.1
-      %p
-        minimal css form framework
+    .page-header
+      .container
+        %h1.logo
+          ForMe
+          %span.beta
+            alpha v0.0.1
 
-      %nav.navbar
-        %ul
-          %li
-            %a{:href => "#components"}
-              Components
-          %li
-            %a.action{:href => "https://github.com/marko-zub/forme/releases/latest"}
-              Download
-
-
+        %nav.navbar
+          %ul
+            %li
+              %a{:href => "#components"}
+                Components
+            %li
+              %a.action{:href => "https://github.com/marko-zub/forme/releases/latest"}
+                Download
       .header-nav-secondary
         %a{:href => "https://github.com/marko-zub/forme"}
           %i.ion-social-github
-      %h3#components
-        Components
-      %ul.nav
-        %li
-          %a{:href => "#input"}
-            Input
-        %li
-          %a{:href => "#select"}
-            Select
-        %li
-          %a{:href => "#textarea"}
-            Textarea
-        %li
-          %a{:href => "#buttons"}
-            Buttons
-        %li
-          %a{:href => "#checkbox"}
-            Checkbox
-        %li
-          %a{:href => "#radio"}
-            Radio
-        %li
-          %a{:href => "#switcher"}
-            Switcher
-        %li
-          %a{:href => "#progressbar"}
-            Progressbar
+    .page-main
+      .container
+        %p
+          minimal css form framework      
+        %h3#components
+          Components
+        %ul.nav
+          %li
+            %a{:href => "#input"}
+              Input
+          %li
+            %a{:href => "#select"}
+              Select
+          %li
+            %a{:href => "#textarea"}
+              Textarea
+          %li
+            %a{:href => "#buttons"}
+              Buttons
+          %li
+            %a{:href => "#checkbox"}
+              Checkbox
+          %li
+            %a{:href => "#radio"}
+              Radio
+          %li
+            %a{:href => "#switcher"}
+              Switcher
+          %li
+            %a{:href => "#progressbar"}
+              Progressbar
 
-      -# .fm-container
-      %form.fm-form
-        %hr/
-        = render :partial => 'components/input.haml'
-        %hr/
-        = render :partial => 'components/select.haml'
-        %hr/
-        = render :partial => 'components/textarea.haml'
-        %hr/
-        = render :partial => 'components/buttons.haml'
-        %hr/
-        / = render :partial => 'components/disabled.haml'
-        /hr/
-        = render :partial => 'components/checkbox.haml'
-        %hr/
-        = render :partial => 'components/radio.haml'
-        %hr/
-        = render :partial => 'components/switcher.haml'
-        %hr/
-        = render :partial => 'components/progressbar.haml'
-        %hr/
+        -# .fm-container
+        %form.fm-form
+          %hr/
+          = render :partial => 'components/input.haml'
+          %hr/
+          = render :partial => 'components/select.haml'
+          %hr/
+          = render :partial => 'components/textarea.haml'
+          %hr/
+          = render :partial => 'components/buttons.haml'
+          %hr/
+          / = render :partial => 'components/disabled.haml'
+          /hr/
+          = render :partial => 'components/checkbox.haml'
+          %hr/
+          = render :partial => 'components/radio.haml'
+          %hr/
+          = render :partial => 'components/switcher.haml'
+          %hr/
+          = render :partial => 'components/progressbar.haml'
+          %hr/
 
     = render :partial => 'footer.haml'
     = render :partial => 'scripts.haml'

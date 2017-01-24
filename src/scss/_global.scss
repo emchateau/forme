@@ -38,7 +38,7 @@ a {
   position: fixed;
   right: 0;
   top: 0;
-  margin: 20px 30px;
+  margin: 5px 30px;
   z-index: 111;
   i {
     font-size: 32px;
@@ -81,23 +81,49 @@ pre + hr {
   ul {
     list-style: none;
     padding: 0;
-    margin: 10px -10px 30px;
+    margin: 0px -10px 0px;
     li {
       display: inline-block;
       a {
         display: block;
         font-size: 16px;
-        padding: 5px 10px;
+        padding: 5px 16px;
+        color: $fm_active_color;
         &.action {
-          background-color: $fm_active_color;
-          color: $fm_btn_color;
+          border: 1px solid $fm_active_color;
           @include border-radius(2px);
           &:hover {
+            color: #fff;
             border-color: darken($fm_active_color, 10%);
             background-color: darken($fm_active_color, 10%);
           }
         }
       }
     }
+  }
+}
+
+.page-main {
+  padding: 60px 0 0;
+}
+
+.page-header {
+  // background-color: $fm_active_color;
+  background-color: #fff;
+  z-index: 100;
+  position: fixed;
+  overflow: hidden;
+  color: $fm_active_color;
+  width: 100%;
+  top: 0;
+  .logo {
+    float: left;
+    font-size: 23px;
+    margin: 15px 0;
+    line-height: 1;
+  }
+  .navbar {
+    margin: 10px 0;
+    float: right;
   }
 }
