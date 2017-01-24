@@ -1,6 +1,16 @@
 %h3#progressbar
   Progress bar
-.fm-form-row
-  .fm-form-control
-    .fm-progress-bar
-      .fm-progress-bar-line{:style => "width:70%"}
+.fm-container
+  .fm-form-row
+    .fm-form-control
+      .fm-progress-bar
+        .fm-progress-bar-line{:style => "width:70%"}
+
+%pre
+  %code.language-html
+    :preserve
+      &lt;div class='fm-form-control'&gt;
+        &lt;div class='fm-progress-bar'&gt;
+          &lt;div class='fm-progress-bar-line' style='width:70%'&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;

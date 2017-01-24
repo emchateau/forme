@@ -1,7 +1,14 @@
-%h3#buttons
-  Buttons
-.fm-form-row
-  .fm-form-control
+.fm-container
+  %h3#buttons
+    Buttons
+  .fm-form-row
     %input.fm-button{:type => "submit", :value => "Submit"}/
     %input.fm-button.fm-button-outline{:type => "submit", :value => "Submit"}/
     %input.fm-button.fm-button-clean{:type => "submit", :value => "Submit"}/
+
+%pre
+  %code.language-html
+    :preserve
+      &lt;input class='fm-button' type='submit' value='Submit'&gt;
+      &lt;input class='fm-button fm-button-outline' type='submit' value='Submit'&gt;
+      &lt;input class='fm-button fm-button-clean' type='submit' value='Submit'&gt;

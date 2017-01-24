@@ -20,3 +20,7 @@
 2016-09-22 17:32:09      Copy /css/style.css
 2016-09-28 17:26:08    Create index.html
 2016-09-28 17:26:08      Copy /css/style.css
+2017-01-24 16:31:15    Create index.html
+2017-01-24 16:31:15      Copy /css/style.css
+2017-01-24 16:31:15      Copy /js/main.js
+2017-01-24 16:31:15      Copy /js/plugins/prism.js

@@ -53,6 +53,16 @@ a:hover {
   margin: 4px 0 5px;
 }
 
+.container {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+
+pre + hr {
+  margin-top: 20px;
+}
+
 *:after, *:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -498,7 +508,6 @@ input.fm-button[type="submit"] {
 
 .fm-container {
   width: 320px;
-  margin: 0 auto;
 }
 
 .fm-full-width {
