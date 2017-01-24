@@ -14,14 +14,25 @@
       %h1.logo
         ForMe
         %span.beta
-          alpha
+          alpha v0.0.1
       %p
         minimal css form framework
+
+      %nav.navbar
+        %ul
+          %li
+            %a{:href => "#components"}
+              Components
+          %li
+            %a.action{:href => "https://github.com/marko-zub/forme/releases/latest"}
+              Download
+
 
       .header-nav-secondary
         %a{:href => "https://github.com/marko-zub/forme"}
           %i.ion-social-github
-      %h3 Components
+      %h3#components
+        Components
       %ul.nav
         %li
           %a{:href => "#input"}
@@ -70,4 +81,5 @@
         = render :partial => 'components/progressbar.haml'
         %hr/
 
+    = render :partial => 'footer.haml'
     = render :partial => 'scripts.haml'

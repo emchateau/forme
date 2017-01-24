@@ -5,6 +5,8 @@ body {
     color: #2c3e50;
     font-size: 16px;
     line-height: 1.2;
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
@@ -64,4 +66,38 @@ a {
 
 pre + hr {
   margin-top: 20px;
+}
+
+.footer {
+  // background-color: #ebebeb;
+  margin: 30px 0 0;
+  padding: 15px 0 20px;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+.navbar {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px -10px 30px;
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        font-size: 16px;
+        padding: 5px 10px;
+        &.action {
+          background-color: $fm_active_color;
+          color: $fm_btn_color;
+          @include border-radius(2px);
+          &:hover {
+            border-color: darken($fm_active_color, 10%);
+            background-color: darken($fm_active_color, 10%);
+          }
+        }
+      }
+    }
+  }
 }
