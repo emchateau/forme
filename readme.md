@@ -1,5 +1,6 @@
-Forme - minimalist CSS forms framework, only size 11kb(not minified). Builded with SCSS and HAML.__
-[Demomd](http://marko-zub.github.io/forme)
+Forme - minimalist CSS forms framework, only size 11kb(not minified). Builded with SCSS and HAML.
+
+[Demo](http://marko-zub.github.io/forme)
 
 ###Why use Forme?###
 * Easy customize (change only variable.scss).
